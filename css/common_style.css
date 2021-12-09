@@ -1,0 +1,26 @@
+@import url(reset_style.css);
+
+/*全局样式*/
+
+body {
+    margin: 6px;
+}
+
+
+/* 基础样式*/
+
+
+/* 解决高度坍塌*/
+
+.clearfix::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+
+/*子元素左浮动*/
+
+.left>* {
+    float: left;
+}
