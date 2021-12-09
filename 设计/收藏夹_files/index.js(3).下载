@@ -1,0 +1,1 @@
+!function(){KISSY.use("ua, dom",function(o,i,a){if(i.ie<=6){var t=location.href,e=/daily/,f=e.test(t);location.href=f?"//favorite.daily.taobao.net/ie6.htm":"//favorite.taobao.com/ie6.htm"}a.viewportWidth()<=1250&&KISSY.UA.ie<=8&&KISSY.DOM.addClass("body","w990"),location.href.indexOf("favbeta=1")>=0&&window.g_config&&(window.g_config.favBeta=!0)})}();
