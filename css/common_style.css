@@ -1,4 +1,13 @@
-@import url(reset_style.css);
+/* -----------导入---------*/
+
+
+/*导入重置样式表*/
+
+@import url("reset_style.css");
+
+/*导入字体图标库*/
+
+@import url("../resource/icon/iconfont.css");
 
 /*定义全局字体*/
 
@@ -35,4 +44,41 @@ body {
 
 .left>* {
     float: left;
+}
+
+
+/*导航栏样式*/
+
+.header_nav {
+    display: flex;
+    height: 60px;
+    margin: 0 40px;
+    border-bottom: 1px solid #3c4043;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.header_nav>.left {
+    display: flex;
+    width: 200px;
+    justify-content: space-between;
+}
+
+.header_nav a {
+    color: #3c4043;
+}
+
+.iconfont::before {
+    font-size: 28px;
+    color: #3c4043
+}
+
+.icon-favorite::before {
+    font-size: 36px;
+    position: relative;
+    top: 3px;
+}
+
+.icon-cart::before {
+    margin-right: 5px;
 }

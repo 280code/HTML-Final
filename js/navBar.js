@@ -1,18 +1,5 @@
-<!DOCTYPE html>
-<html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>导航</title>
-    <link rel="stylesheet" href="css/common_style.css">
-    <link rel="stylesheet" href="resource/icon/iconfont.css">
-    <link rel="stylesheet" href="css/navigation_style.css">
-
-    <body>
-        <nav class=" header_nav ">
-            <div class="left ">
+let nav = document.createElement("nav");
+nav.innerHTML = `            <div class="left ">
                 <img src=" " alt="YangStore ">
                 <a href="phone.html">手机</a>
                 <a href="computer.html">电脑</a>
@@ -24,8 +11,6 @@
                 <a href="login.html"><i  class="iconfont icon-user "></i>
                
                 </a>
-            </div>
-        </nav>
-    </body>
-
-</html>
+            </div>`
+nav.className = "header_nav"
+document.body.insertAdjacentElement("beforebegin", nav);

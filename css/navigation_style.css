@@ -1,21 +1,33 @@
-.header {
+.header_nav {
     display: flex;
     height: 60px;
     margin: 0 40px;
-    border: 1px solid;
+    border-bottom: 1px solid #3c4043;
     align-items: center;
+    justify-content: space-between;
 }
 
-.header>.left {
+.header_nav>.left {
     display: flex;
     width: 200px;
     justify-content: space-between;
 }
 
-a {
-    display: inline-block;
+.header_nav a {
+    color: #3c4043;
 }
 
-.icon-cart {
-    font-size: 600px;
+.iconfont::before {
+    font-size: 28px;
+    color: #3c4043
+}
+
+.icon-favorite::before {
+    font-size: 36px;
+    position: relative;
+    top: 3px;
+}
+
+.icon-cart::before {
+    margin-right: 5px;
 }
