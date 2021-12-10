@@ -1,0 +1,289 @@
+.container {
+    width: 860px;
+    margin: auto;
+    box-sizing: border-box;
+    display: flex;
+}
+
+.main {
+    padding: 80px 0;
+}
+
+.input input[type="text"]:hover,
+.input input[type="password"]:hover {
+    border-color: #c0c4cc;
+}
+
+.input input[type="text"]:focus,
+.input input[type="password"]:focus {
+    border-color: #00a1d6;
+}
+
+.container .title-top .title {
+    height: 18px;
+    border-bottom: 1px solid #ddd;
+    text-align: center;
+    box-sizing: border-box;
+    margin: 28px auto;
+}
+
+.container .title-top .title span {
+    font-size: 38px;
+    background-color: white;
+    padding: 0 20px;
+}
+
+.container .main {
+    width: 420px;
+    margin: auto;
+    text-align: center;
+}
+
+.container .main .input {
+    width: 420px;
+    height: 40px;
+    margin-bottom: 30px;
+}
+
+.container .main input {
+    width: 100%;
+    height: 40px;
+    border-radius: 5px;
+    padding: 0 15px;
+    border: 1px solid #dcdfe6;
+    box-sizing: border-box;
+}
+
+
+/* 错误提示 */
+
+.container .main .haserror {
+    position: relative;
+}
+
+.container .main .haserror .err {
+    color: #f45d90;
+    font-size: 12px;
+    width: 220px;
+    position: absolute;
+    right: -156px;
+    top: 13px;
+}
+
+.container .main .haserror input {
+    border-color: #f45d90;
+}
+
+
+/* 安全系数 */
+
+.container .main .safety {
+    position: relative;
+}
+
+.container .main .safety .factor {
+    position: absolute;
+    top: -27px;
+    width: 100%;
+}
+
+.container .main .safety .factor .left {
+    position: absolute;
+    width: 300px;
+    height: 20px;
+}
+
+.container .main .safety .factor .left .title {
+    width: 80px;
+    float: left;
+    font-weight: bold;
+}
+
+.container .main .safety .factor .left .icon {
+    margin-left: 20px;
+}
+
+.container .main .safety .factor .left li {
+    float: left;
+    width: 30px;
+    height: 5px;
+    border-radius: 5px;
+    margin: 6px;
+}
+
+
+/* 安全系数文字 */
+
+.container .main .safety .factor {
+    position: absolute;
+    right: 70px;
+    font-size: 12px;
+    color: #49c519;
+    font-family: "PingFang SC,Hiragino Sans GB,Microsoft YaHei,sans-serif";
+    font-weight: 700;
+}
+
+.container .main .input input::-webkit-input-placeholder {
+    color: #909399;
+}
+
+.container .main .input input::-moz-placeholder {
+    color: #909399;
+}
+
+.container .main .input input:-ms-input-placeholder {
+    color: #909399;
+}
+
+.container .main .input input::-ms-input-placeholder {
+    color: #909399;
+}
+
+.container .main .input input::placeholder {
+    color: #909399;
+}
+
+.main .input .section,
+.main .input .input-tel {
+    float: left;
+    height: 40px;
+    box-sizing: border-box;
+}
+
+.main .input .section {
+    width: 130px;
+}
+
+.main .input .section .titile {
+    line-height: 38px;
+    border: 1px solid #dcdfe6;
+    border-right: none;
+    border-radius: 5px 0 0 5px;
+    box-sizing: border-box;
+    color: #909399;
+    cursor: pointer;
+}
+
+.main .input .section:hover ul {
+    display: block;
+}
+
+.main .input .section ul {
+    line-height: 1.5em;
+    max-height: 255px;
+    font-size: 14px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    border: 1px solid #e4e7ed;
+    background-color: #fff;
+    border-radius: 5px;
+    position: relative;
+    z-index: 1;
+    overflow-y: scroll;
+    top: 10px;
+    display: none;
+}
+
+.main .input .input-tel input {
+    width: 290px;
+    height: 40px;
+    line-height: 40px;
+    border-radius: 0 5px 5px 0;
+}
+
+.container .main {
+    position: relative;
+}
+
+button {
+    background-color: #00a1d6;
+    border-radius: 5px;
+    border: #00a1d6;
+    color: white;
+}
+
+.button {
+    position: absolute;
+    top: 2px;
+    right: 2px;
+    width: 130px;
+    height: 36px;
+}
+
+button:hover {
+    background-color: #33b4d1;
+    border-color: #33b4d1;
+    cursor: pointer;
+}
+
+.container .main .protocol input[type="checkbox"] {
+    width: 14px;
+    height: 14px;
+    border: 1px solid #dcdfe6;
+}
+
+.container .main .protocol {
+    font-size: 12px;
+    margin: -30px 0 10px 0;
+    text-align: left;
+}
+
+
+/* 设置单选框 */
+
+.container .main .protocol .checkbox {
+    display: inline-block;
+    width: 14px;
+    height: 14px;
+    box-sizing: border-box;
+    border: 1.5px solid #dcdfe6;
+    border-radius: 2px;
+    padding-top: 2px;
+    position: relative;
+    top: 2px;
+}
+
+.container .main .protocol label input {
+    display: none;
+}
+
+.container .main .protocol label input:checked+.checkbox {
+    border-color: #00a1d6;
+}
+
+.container .main .protocol label input:checked+.checkbox::after {
+    content: "";
+    width: 7px;
+    height: 7px;
+    border-radius: 2px;
+    display: block;
+    background-color: #00a1d6;
+    margin: auto;
+}
+
+.container .main a {
+    color: #00a1d6;
+}
+
+button.fill {
+    width: 100%;
+    height: 100%;
+}
+
+button:disabled {
+    background-color: #f5f5f5;
+    color: rgba(0, 0, 0, 0.25);
+    cursor: not-allowed;
+    box-sizing: border-box;
+    border-color: #d9d9d9;
+}
+
+.container .main .login {
+    margin-top: -32px;
+    text-align: right;
+}
+
+a {
+    font-size: 12px;
+}
