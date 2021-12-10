@@ -1,5 +1,17 @@
 @import url(reset_style.css);
 
+/*定义全局字体*/
+
+@font-face {
+    font-family: "google";
+    src: url("../resource/font/NotoSansSC-Regular.otf");
+}
+
+* {
+    font-family: "google"!important;
+}
+
+
 /*全局样式*/
 
 body {

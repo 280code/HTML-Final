@@ -1,0 +1,21 @@
+.header {
+    display: flex;
+    height: 60px;
+    margin: 0 40px;
+    border: 1px solid;
+    align-items: center;
+}
+
+.header>.left {
+    display: flex;
+    width: 200px;
+    justify-content: space-between;
+}
+
+a {
+    display: inline-block;
+}
+
+.icon-cart {
+    font-size: 600px;
+}
