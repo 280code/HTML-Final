@@ -207,6 +207,7 @@
     background-color: #FFFFFF;
     box-shadow: 0 10px 10px rgba(0, 0, 0, .4);
     display: none;
+    z-index: 1;
 }
 
 .colu4 {
@@ -339,8 +340,7 @@
     border: dotted #332B28 1px;
     width: 72%;
     margin: 0 auto;
-<<<<<<< HEAD
-=======
+    <<<<<<< HEAD=======
 }
 
 
@@ -455,5 +455,5 @@
 .mF_fancy .show a {
     visibility: visible;
     opacity: 1;
->>>>>>> 51627fe1f1c0cb260761f4ea9a171bc535f0e5fa
+    >>>>>>>51627fe1f1c0cb260761f4ea9a171bc535f0e5fa
 }
