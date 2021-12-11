@@ -12,5 +12,10 @@ nav.innerHTML = `            <div class="left ">
                
                 </a>
             </div>`
-nav.className = "header_nav"
+nav.className = "header_nav";
+document.addEventListener("scroll",
+    (e) => {
+        console.log(document.documentElement.scrollTop)
+    }
+)
 document.body.insertAdjacentElement("beforebegin", nav);
