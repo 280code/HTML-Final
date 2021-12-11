@@ -33,7 +33,7 @@
 }
 
 
-/* 分界线 */
+/* 分界线----------------------------------- */
 
 #primary-menu {
     width: 100%;
@@ -144,7 +144,7 @@
 }
 
 
-/* 下面是侧边栏的相关代码 */
+/* 下面是侧边栏的相关代码---------------------------------------- */
 
 .sidebar {
     position: absolute;
@@ -250,11 +250,77 @@
 }
 
 .sidebar {
-    display: inline;
+    display: inline-block;
 }
 
 
-/* ----------分界线---------- */
+/* 分界线-------------------------------------- */
+
+
+/* 下面是测试代码 */
+
+.test {
+    position: absolute;
+    left: 50;
+    background-color: #cab6af;
+    margin-left: 30;
+    padding-left: 30px;
+}
+
+
+/* 分界线 --------------------------------------*/
+
+
+/* 这边是侧边栏的右侧的内容 */
+
+#picgroup {
+    position: relative;
+    float: right;
+    padding-bottom: 10px;
+}
+
+.cloth3 {
+    position: relative;
+    float: right;
+    text-align: center;
+    padding-top: 0;
+}
+
+.cloth3 img {
+    width: 250px;
+    height: 250px;
+    padding-bottom: 5px;
+}
+
+.cloth3 a {
+    font-family: 微软雅黑;
+    color: black;
+    text-decoration: none;
+}
+
+.cloth3 a:hover {
+    text-decoration: underline;
+}
+
+.cloth3 #price {
+    font-family: 微软雅黑;
+    color: #4B66B2;
+}
+
+
+/* flag */
+
+#main-right #picgroup .cloth3 {
+    padding-left: 10;
+    /* background-color: rgb(236, 114, 38); */
+    display: block;
+    /* left: 0px; */
+    right: 66.5px;
+    padding: 20px;
+}
+
+
+/* ----------分界线------------------------------ */
 
 .mF_fancy .pic {
     position: absolute;
