@@ -54,6 +54,17 @@
     z-index: 100;
 }
 
+.header_nav a:hover {
+    color: #027cb0;
+}
+
+
+/*复写logo中的a*/
+
+.logo>a>span:hover {
+    color: #3c4043;
+}
+
 .header_nav>.left {
     display: flex;
     width: 300px;
@@ -76,11 +87,6 @@
     color: inherit
 }
 
-.right i:hover,
-.left>a:hover {
-    color: #027cb0
-}
-
 .icon-favorite::before {
     font-size: 34px;
     position: relative;
@@ -89,4 +95,37 @@
 
 .icon-cart::before {
     margin-right: 5px;
+}
+
+
+/*---------导航二级菜单--------------*/
+
+.left>.phone,
+.left>.computer {
+    position: relative;
+    height: 60px;
+    line-height: 60px;
+}
+
+.submenu {
+    position: absolute;
+    top: 60px;
+    left: -50px;
+    width: 130px;
+    /* border-top: none; */
+    background: white;
+    border: 1px solid rgb(0 0 0 / 10%);
+    border-top: none;
+    display: none;
+}
+
+.phone:hover .submenu,
+.computer:hover .submenu {
+    display: block;
+}
+
+.submenu li {
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
 }

@@ -3,8 +3,27 @@ nav.innerHTML = `            <div class="left">
                 <div class="logo">
                     <a href="index.html"><img src="./resource/logo/Y.svg " alt="YangStore "> <span>YangStore</span></a>
                 </div>
-                <a href="phone.html">手机</a>
-                <a href="computer.html">电脑</a>
+                <div class="phone">
+                    <a href="phone.html">手机</a>
+                    <ul class="submenu">
+                        <li><a href="phone_mi.html">华为</a></li>
+                        <li><a href="phone_mi.html">荣耀</a></li>
+                        <li><a href="phone_mi.html">小米</a></li>
+                        <li><a href="phone_mi.html">Apple</a></li>
+                        <li><a href="phone_mi.html">三星</a></li>
+                    </ul>
+                </div>
+                <div class="computer">
+                    <a href="computer.html">电脑</a>
+                    <ul class="submenu">
+                        <li><a href="computer_apple.html">华为</a></li>
+                        <li><a href="computer_apple.html">荣耀</a></li>
+                        <li><a href="computer_apple.html">小米</a></li>
+                        <li><a href="computer_apple.html">Apple</a></li>
+                        <li><a href="computer_apple.html">三星</a></li>
+                    </ul>
+                </div>
+
             </div>
             <div class="right ">
                 <a href="about.html"><i class="iconfont icon-aboutus"></i></a>
