@@ -144,6 +144,116 @@
 }
 
 
+/* 下面是侧边栏的相关代码 */
+
+.sidebar {
+    position: absolute;
+    top: 30;
+    left: 0;
+    height: 460px;
+    width: 234px;
+    background: rgba(0, 0, 0, .3);
+    padding-top: 20px;
+    padding-bottom: 10px;
+    z-index: 45;
+}
+
+.sidebar li {
+    width: 234px;
+    height: 42px;
+    line-height: 42px;
+    cursor: pointer;
+}
+
+.sidebar li a {
+    float: left;
+    font-size: 15px;
+    color: #FFFFFF;
+    margin-left: 20px;
+}
+
+.sidebar li span::after {
+    float: right;
+    font-family: 'icomoon';
+    content: "\e902";
+    font-size: 22px;
+    color: #FFFFFF;
+    margin-right: 20px;
+}
+
+.sidebar .qing .org:hover {
+    background-color: #FF4500;
+}
+
+
+/* 经过侧边栏小li 详情页columm显示 */
+
+.sidebar .qing .org:hover .columm {
+    display: block;
+}
+
+
+/* 侧边栏详情页 */
+
+.columm {
+    position: absolute;
+    top: 0;
+    left: 234px;
+    height: 458px;
+    background-color: #FFFFFF;
+    box-shadow: 0 10px 10px rgba(0, 0, 0, .4);
+    display: none;
+}
+
+.colu4 {
+    width: 1100px;
+}
+
+.colu2 {
+    width: 540px;
+}
+
+.colu3 {
+    width: 800px;
+}
+
+.columm ul {
+    float: left;
+    width: 260px;
+    height: 460px;
+}
+
+.columm li {
+    width: 265px;
+    height: 70px;
+    margin-top: 5px;
+    line-height: 70px;
+    text-align: center;
+    vertical-align: middle;
+}
+
+.columm li img {
+    margin: 10px 0 0 10px;
+    float: left;
+    width: 50px;
+    height: 50px;
+}
+
+.sidebar .columm li a {
+    float: left;
+    margin-left: 10px;
+    color: #333333;
+}
+
+.sidebar .columm li:hover a {
+    color: #FF4500;
+}
+
+.sidebar {
+    display: inline;
+}
+
+
 /* ----------分界线---------- */
 
 .mF_fancy .pic {
