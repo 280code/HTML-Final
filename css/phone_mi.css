@@ -1,0 +1,463 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+#header {
+    width: 100%;
+    height: 50px;
+    background: #332B28;
+}
+
+#small_menu ul {
+    list-style: none;
+}
+
+#small_menu li {
+    float: left;
+    width: 90px;
+}
+
+#small_menu a {
+    color: #9B9491;
+    font-family: "微软雅黑";
+    text-decoration: none;
+    font-size: 12px;
+    letter-spacing: 0.75px;
+    line-height: 25px;
+    vertical-align: top;
+}
+
+#small_menu a:hover {
+    color: white;
+}
+
+
+/* 分界线 */
+
+#primary-menu {
+    width: 100%;
+    height: 60px;
+    background: #332B28;
+}
+
+#logo {
+    position: relative;
+    float: left;
+    width: 177px;
+    height: 60px;
+    margin-left: 14%;
+}
+
+#logo img {
+    height: 60px;
+}
+
+#search {
+    position: relative;
+    float: right;
+    top: 8px;
+    margin-right: 14%;
+}
+
+#big-menu {
+    position: relative;
+    float: left;
+    margin-left: 15%;
+    height: 60px;
+}
+
+#big-menu ul {
+    position: relative;
+    list-style: none;
+    height: 60px;
+    text-align: center;
+}
+
+#big-menu li {
+    position: relative;
+    float: left;
+    width: 150px;
+    height: 60px;
+}
+
+#big-menu li ul {
+    position: relative;
+    list-style: none;
+    height: 60px;
+    text-align: center;
+    float: left;
+    z-index: 5;
+    display: none;
+}
+
+#big-menu li ul li {
+    position: relative;
+    float: left;
+    width: 150px;
+    background-color: #332B28;
+}
+
+#big-menu a {
+    color: white;
+    font-family: "微软雅黑";
+    text-decoration: none;
+    font-size: 15px;
+    letter-spacing: 0.75px;
+    line-height: 25px;
+    vertical-align: top;
+    line-height: 60px;
+}
+
+#big-menu a:hover {
+    color: #9B9491;
+}
+
+#big-menu ul li:hover ul {
+    display: block;
+}
+
+
+/* 选择相关性 */
+
+#row {
+    width: 72%;
+    margin: 0 auto;
+    height: 122px;
+}
+
+#row p {
+    position: relative;
+    float: left;
+    font-family: 微软雅黑;
+    line-height: 122px;
+    letter-spacing: 5px;
+    font-size: 25px;
+}
+
+#row select {
+    position: relative;
+    float: right;
+    top: 30%;
+    height: 50px;
+    width: 150px;
+}
+
+
+/* 下面是侧边栏的相关代码 */
+
+.sidebar {
+    position: absolute;
+    top: 30;
+    left: 0;
+    height: 460px;
+    width: 234px;
+    background: rgba(0, 0, 0, .3);
+    padding-top: 20px;
+    padding-bottom: 10px;
+    z-index: 45;
+}
+
+.sidebar li {
+    width: 234px;
+    height: 42px;
+    line-height: 42px;
+    cursor: pointer;
+}
+
+.sidebar li a {
+    float: left;
+    font-size: 15px;
+    color: #FFFFFF;
+    margin-left: 20px;
+}
+
+.sidebar li span::after {
+    float: right;
+    font-family: 'icomoon';
+    content: "\e902";
+    font-size: 22px;
+    color: #FFFFFF;
+    margin-right: 20px;
+}
+
+.sidebar .qing .org:hover {
+    background-color: #FF4500;
+}
+
+
+/* 经过侧边栏小li 详情页columm显示 */
+
+.sidebar .qing .org:hover .columm {
+    display: block;
+}
+
+
+/* 侧边栏详情页 */
+
+.columm {
+    position: absolute;
+    top: 0;
+    left: 234px;
+    height: 458px;
+    background-color: #FFFFFF;
+    box-shadow: 0 10px 10px rgba(0, 0, 0, .4);
+    display: none;
+}
+
+.colu4 {
+    width: 1100px;
+}
+
+.colu2 {
+    width: 540px;
+}
+
+.colu3 {
+    width: 800px;
+}
+
+.columm ul {
+    float: left;
+    width: 260px;
+    height: 460px;
+}
+
+.columm li {
+    width: 265px;
+    height: 70px;
+    margin-top: 5px;
+    line-height: 70px;
+    text-align: center;
+    vertical-align: middle;
+}
+
+.columm li img {
+    margin: 10px 0 0 10px;
+    float: left;
+    width: 50px;
+    height: 50px;
+}
+
+.sidebar .columm li a {
+    float: left;
+    margin-left: 10px;
+    color: #333333;
+}
+
+.sidebar .columm li:hover a {
+    color: #FF4500;
+}
+
+.sidebar {
+    display: inline;
+}
+
+
+/* ----------分界线---------- */
+
+.mF_fancy .pic {
+    position: absolute;
+    z-index: 1;
+}
+
+.mF_fancy .pic ul {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: x;
+    height: 100%;
+    overflow: hidden;
+}
+
+.mF_fancy .pic ul li {
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: none;
+    overflow: hidden;
+}
+
+.mF_fancy .txt {
+    position: absolute;
+    z-index: 2;
+    top: 12px;
+    left: 12px;
+    width: 80%;
+    color: #fff;
+}
+
+.mF_fancy .txt li {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    padding: 12px;
+    visibility: hidden;
+    opacity: 0;
+    -webkit-transition: all .4s;
+    -moz-transition: all .4s;
+    -o-transition: all .4s;
+}
+
+.mF_fancy .txt li a {
+    display: block;
+    color: #fff;
+    font-size: 14px;
+    font-weight: bold;
+    text-decoration: none;
+    font-family: '微软雅黑';
+}
+
+
+/*标题样式*/
+
+.mF_fancy .txt li p {
+    display: none;
+}
+
+
+/* 导航栏 */
+
+#daohang {
+    width: 100%;
+    height: 65px;
+}
+
+#daohang p {
+    position: relative;
+    left: 14%;
+    letter-spacing: 5px;
+}
+
+#daohang a {
+    font-family: 微软雅黑;
+    text-decoration: none;
+    color: black;
+    line-height: 65px;
+}
+
+#daohang a:hover {
+    text-decoration: underline;
+}
+
+#daohang hr {
+    border: dotted #332B28 1px;
+    width: 72%;
+    margin: 0 auto;
+}
+
+
+/*隐藏详细描述文字*/
+
+.mF_fancy .txt li.current {
+    visibility: visible;
+    opacity: 1;
+}
+
+.mF_fancy .num {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+}
+
+.mF_fancy .num ul {
+    width: 120%;
+    background: #666;
+    margin-left: -1px;
+}
+
+.mF_fancy .num ul li {
+    display: inline-block;
+    *display: inline;
+    *zoom: 1;
+    height: 12px;
+    border-left: 1px solid #ddd;
+    background: #666;
+    overflow: hidden;
+    cursor: pointer;
+    -webkit-transition: all .4s;
+    -moz-transition: all .4s;
+    -o-transition: all .4s;
+}
+
+.mF_fancy .num ul li:hover {
+    background: #ddd;
+}
+
+.mF_fancy .num ul li.current {
+    background: #090909;
+    cursor: default;
+}
+
+.mF_fancy .num ul li a {
+    display: none;
+}
+
+.mF_fancy .thumb {
+    position: absolute;
+    left: 0;
+    bottom: 40px;
+    width: 100%;
+    z-index: 9;
+}
+
+.mF_fancy .thumb ul {
+    width: 120%;
+}
+
+.mF_fancy .thumb ul li {
+    display: inline-block!important;
+    *display: inline!important;
+    *zoom: 1;
+    width: x;
+    position: relative;
+    visibility: hidden;
+    cursor: pointer;
+}
+
+.mF_fancy .thumb ul li img {
+    width: 100%;
+}
+
+.mF_fancy .prev,
+.mF_fancy .next {
+    font: 700 53px/58px arial;
+    width: 37px;
+    height: 65px;
+    overflow: hidden;
+    position: absolute;
+    z-index: 9;
+    left: 0px;
+    cursor: pointer;
+    top: 40%;
+}
+
+.mF_fancy .next {
+    left: auto;
+    right: 0px;
+}
+
+.mF_fancy .prev a,
+.mF_fancy .next a {
+    display: block;
+    color: #fff;
+    text-align: center;
+    text-decoration: none;
+    visibility: hidden;
+    opacity: 0;
+    -webkit-transition: all .4s;
+    -moz-transition: all .4s;
+    -o-transition: all .4s;
+}
+
+.mF_fancy .prev a:hover,
+.mF_fancy .next a:hover {
+    color: #f60;
+}
+
+.mF_fancy .show a {
+    visibility: visible;
+    opacity: 1;
+}
