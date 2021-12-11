@@ -153,7 +153,6 @@
     background: rgba(0, 0, 0, .3);
     padding-top: 20px;
     padding-bottom: 10px;
-    z-index: 45;
 }
 
 .sidebar li {
@@ -340,4 +339,121 @@
     border: dotted #332B28 1px;
     width: 72%;
     margin: 0 auto;
+<<<<<<< HEAD
+=======
+}
+
+
+/*隐藏详细描述文字*/
+
+.mF_fancy .txt li.current {
+    visibility: visible;
+    opacity: 1;
+}
+
+.mF_fancy .num {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+}
+
+.mF_fancy .num ul {
+    width: 120%;
+    background: #666;
+    margin-left: -1px;
+}
+
+.mF_fancy .num ul li {
+    display: inline-block;
+    *display: inline;
+    *zoom: 1;
+    height: 12px;
+    border-left: 1px solid #ddd;
+    background: #666;
+    overflow: hidden;
+    cursor: pointer;
+    -webkit-transition: all .4s;
+    -moz-transition: all .4s;
+    -o-transition: all .4s;
+}
+
+.mF_fancy .num ul li:hover {
+    background: #ddd;
+}
+
+.mF_fancy .num ul li.current {
+    background: #090909;
+    cursor: default;
+}
+
+.mF_fancy .num ul li a {
+    display: none;
+}
+
+.mF_fancy .thumb {
+    position: absolute;
+    left: 0;
+    bottom: 40px;
+    width: 100%;
+    z-index: 9;
+}
+
+.mF_fancy .thumb ul {
+    width: 120%;
+}
+
+.mF_fancy .thumb ul li {
+    *zoom: 1;
+    width: x;
+    position: relative;
+    visibility: hidden;
+    cursor: pointer;
+}
+
+.mF_fancy .thumb ul li img {
+    width: 100%;
+}
+
+.mF_fancy .prev,
+.mF_fancy .next {
+    font: 700 53px/58px arial;
+    width: 37px;
+    height: 65px;
+    overflow: hidden;
+    position: absolute;
+    z-index: 9;
+    left: 0px;
+    cursor: pointer;
+    top: 40%;
+}
+
+.mF_fancy .next {
+    left: auto;
+    right: 0px;
+}
+
+.mF_fancy .prev a,
+.mF_fancy .next a {
+    display: block;
+    color: #fff;
+    text-align: center;
+    text-decoration: none;
+    visibility: hidden;
+    opacity: 0;
+    -webkit-transition: all .4s;
+    -moz-transition: all .4s;
+    -o-transition: all .4s;
+}
+
+.mF_fancy .prev a:hover,
+.mF_fancy .next a:hover {
+    color: #f60;
+}
+
+.mF_fancy .show a {
+    visibility: visible;
+    opacity: 1;
+>>>>>>> 51627fe1f1c0cb260761f4ea9a171bc535f0e5fa
 }

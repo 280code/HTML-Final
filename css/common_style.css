@@ -36,13 +36,6 @@
 }
 
 
-/*子元素左浮动*/
-
-.left>* {
-    float: left;
-}
-
-
 /*导航栏样式*/
 
 .header_nav {
@@ -50,6 +43,7 @@
     left: 0;
     right: 0;
     background-color: white;
+    color: #3c4043;
     margin: auto;
     display: flex;
     height: 60px;
@@ -57,29 +51,81 @@
     box-shadow: 0px 2px 4px rgb(0 0 0 / 10%);
     align-items: center;
     justify-content: space-between;
+    z-index: 100;
+}
+
+.header_nav a:hover {
+    color: #027cb0;
+}
+
+
+/*复写logo中的a*/
+
+.logo>a>span:hover {
+    color: #3c4043;
 }
 
 .header_nav>.left {
     display: flex;
-    width: 200px;
+    width: 300px;
     justify-content: space-between;
+    align-items: center;
 }
 
-.header_nav a {
-    color: #3c4043;
+.header_nav>.left img {
+    width: 30px;
+    height: 30px;
+}
+
+.header_nav>.left span {
+    position: relative;
+    bottom: 4px;
 }
 
 .iconfont::before {
     font-size: 28px;
-    color: #3c4043
+    color: inherit
 }
 
 .icon-favorite::before {
-    font-size: 36px;
+    font-size: 34px;
     position: relative;
     top: 3px;
 }
 
 .icon-cart::before {
     margin-right: 5px;
+}
+
+
+/*---------导航二级菜单--------------*/
+
+.left>.phone,
+.left>.computer {
+    position: relative;
+    height: 60px;
+    line-height: 60px;
+}
+
+.submenu {
+    position: absolute;
+    top: 60px;
+    left: -50px;
+    width: 130px;
+    /* border-top: none; */
+    background: white;
+    border: 1px solid rgb(0 0 0 / 10%);
+    border-top: none;
+    display: none;
+}
+
+.phone:hover .submenu,
+.computer:hover .submenu {
+    display: block;
+}
+
+.submenu li {
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
 }
