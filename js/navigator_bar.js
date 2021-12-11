@@ -6,7 +6,7 @@ nav.innerHTML = `            <div class="left ">
             </div>
             <div class="right ">
                 <a href="about.html"><i class="iconfont icon-aboutus"></i></a>
-                <a href="favorite.html"><i  class="iconfont icon-favorite"></i></a>
+                <a href="favorites.html"><i  class="iconfont icon-favorite"></i></a>
                 <a href="shopping_cart.html"><i  class="iconfont icon-cart"></i></a>
                 <a href="login.html"><i  class="iconfont icon-user "></i>
                
