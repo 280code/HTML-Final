@@ -10,7 +10,8 @@ body {
 video {
     position: absolute;
     width: 100%;
-    right: 0;
-    left: 0;
+    height: 100%;
     margin: auto;
+    -o-object-fit: cover;
+       object-fit: cover;
 }
