@@ -8,15 +8,15 @@ function checkeAgreement() {
 }
 
 function isEmail(e) {
-    var atindex = e.indexOf("@");
-    var dotindex = e.indexOf(".", atindex);
+    var atIndex = e.indexOf("@");
+    var dotIndex = e.indexOf(".", atIndex);
     var flag = true;
-    subStr = e.substring(0, dotindex - 1);
+    subStr = e.substring(0, dotIndex - 1);
 
     if (
-        atindex < 1 ||
-        atindex != e.lastIndexOf("@") ||
-        dotindex < atindex + 2 ||
+        atIndex < 1 ||
+        atIndex != e.lastIndexOf("@") ||
+        dotIndex < atIndex + 2 ||
         e.length <= subStr.length
     ) {
         flag = false;
@@ -65,9 +65,8 @@ function checkCommits() {
     }
 
     // stroe in localstorage
-    localStorage.setItem("username", username.value);
-    localStorage.setItem("password", password.value);
-    localStorage.setItem("email", email.value);
+    localStorage.setItem(`${username.value}`, password.value);
 
+    // navigate to login page
     window.location.href = "login.html";
 }
