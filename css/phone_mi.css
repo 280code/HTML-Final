@@ -155,7 +155,6 @@
     background: rgba(0, 0, 0, .3);
     padding-top: 20px;
     padding-bottom: 10px;
-    z-index: 45;
 }
 
 .sidebar li {
@@ -474,8 +473,6 @@
 }
 
 .mF_fancy .thumb ul li {
-    display: inline-block!important;
-    *display: inline!important;
     *zoom: 1;
     width: x;
     position: relative;
