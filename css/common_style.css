@@ -62,7 +62,7 @@
 
 /*复写logo中的a*/
 
-.logo>a>span:hover {
+.logo>a:hover {
     color: #3c4043;
 }
 
