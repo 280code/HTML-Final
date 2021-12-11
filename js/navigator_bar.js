@@ -13,9 +13,7 @@ nav.innerHTML = `            <div class="left ">
                 </a>
             </div>`
 nav.className = "header_nav";
-document.addEventListener("scroll",
-    (e) => {
-        console.log(document.documentElement.scrollTop)
-    }
-)
+let div = document.createElement("div");
+div.style.height = 60 + "px";
 document.body.insertAdjacentElement("beforebegin", nav);
+document.body.insertAdjacentElement("afterbegin", div);
