@@ -36,13 +36,6 @@
 }
 
 
-/*子元素左浮动*/
-
-.left>* {
-    float: left;
-}
-
-
 /*导航栏样式*/
 
 .header_nav {
@@ -50,6 +43,7 @@
     left: 0;
     right: 0;
     background-color: white;
+    color: #3c4043;
     margin: auto;
     display: flex;
     height: 60px;
@@ -62,21 +56,33 @@
 
 .header_nav>.left {
     display: flex;
-    width: 200px;
+    width: 300px;
     justify-content: space-between;
+    align-items: center;
 }
 
-.header_nav a {
-    color: #3c4043;
+.header_nav>.left img {
+    width: 30px;
+    height: 30px;
+}
+
+.header_nav>.left span {
+    position: relative;
+    bottom: 4px;
 }
 
 .iconfont::before {
     font-size: 28px;
-    color: #3c4043
+    color: inherit
+}
+
+.right i:hover,
+.left>a:hover {
+    color: #027cb0
 }
 
 .icon-favorite::before {
-    font-size: 36px;
+    font-size: 34px;
     position: relative;
     top: 3px;
 }

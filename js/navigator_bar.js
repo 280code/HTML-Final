@@ -1,6 +1,8 @@
 let nav = document.createElement("nav");
-nav.innerHTML = `            <div class="left ">
-                <img src=" " alt="YangStore ">
+nav.innerHTML = `            <div class="left">
+                <div class="logo">
+                    <a href="index.html"><img src="./resource/logo/Y.svg " alt="YangStore "> <span>YangStore</span></a>
+                </div>
                 <a href="phone.html">手机</a>
                 <a href="computer.html">电脑</a>
             </div>
@@ -9,7 +11,6 @@ nav.innerHTML = `            <div class="left ">
                 <a href="favorites.html"><i  class="iconfont icon-favorite"></i></a>
                 <a href="shopping_cart.html"><i  class="iconfont icon-cart"></i></a>
                 <a href="login.html"><i  class="iconfont icon-user "></i>
-               
                 </a>
             </div>`
 nav.className = "header_nav";
