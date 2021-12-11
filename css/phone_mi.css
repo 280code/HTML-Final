@@ -41,23 +41,15 @@
     background: #332B28;
 }
 
-#logo {
-    position: relative;
-    float: left;
-    width: 177px;
-    height: 60px;
-    margin-left: 14%;
-}
-
-#logo img {
-    height: 60px;
-}
-
 #search {
     position: relative;
     float: right;
     top: 8px;
     margin-right: 14%;
+    height: 30px;
+    background-color: transparent;
+    color: white;
+    top: 5px;
 }
 
 #big-menu {
@@ -122,7 +114,7 @@
 
 #row {
     width: 72%;
-    margin: 0 auto;
+    margin: auto;
     height: 122px;
 }
 
@@ -143,6 +135,12 @@
     width: 150px;
 }
 
+.xiaomi_img {
+    width: 70px;
+    height: 70px;
+    margin-top: 10px;
+}
+
 
 /* 下面是侧边栏的相关代码---------------------------------------- */
 
@@ -159,15 +157,15 @@
 }
 
 .sidebar li {
-    width: 234px;
-    height: 42px;
-    line-height: 42px;
+    width: 236px;
+    height: 84px;
+    line-height: 32px;
     cursor: pointer;
 }
 
 .sidebar li a {
     float: left;
-    font-size: 15px;
+    font-size: 21px;
     color: #FFFFFF;
     margin-left: 20px;
 }
@@ -190,6 +188,13 @@
 
 .sidebar .qing .org:hover .columm {
     display: block;
+}
+
+
+/* 这边修改侧边栏里面小li的高度 */
+
+.li_height {
+    line-height: 30px;
 }
 
 
@@ -257,20 +262,6 @@
 /* 分界线-------------------------------------- */
 
 
-/* 下面是测试代码 */
-
-.test {
-    position: absolute;
-    left: 50;
-    background-color: #cab6af;
-    margin-left: 30;
-    padding-left: 30px;
-}
-
-
-/* 分界线 --------------------------------------*/
-
-
 /* 这边是侧边栏的右侧的内容 */
 
 #picgroup {
@@ -312,9 +303,7 @@
 
 #main-right #picgroup .cloth3 {
     padding-left: 10;
-    /* background-color: rgb(236, 114, 38); */
     display: block;
-    /* left: 0px; */
     right: 66.5px;
     padding: 20px;
 }
@@ -322,67 +311,8 @@
 
 /* ----------分界线------------------------------ */
 
-.mF_fancy .pic {
-    position: absolute;
-    z-index: 1;
-}
 
-.mF_fancy .pic ul {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: x;
-    height: 100%;
-    overflow: hidden;
-}
-
-.mF_fancy .pic ul li {
-    position: absolute;
-    top: 0;
-    left: 0;
-    display: none;
-    overflow: hidden;
-}
-
-.mF_fancy .txt {
-    position: absolute;
-    z-index: 2;
-    top: 12px;
-    left: 12px;
-    width: 80%;
-    color: #fff;
-}
-
-.mF_fancy .txt li {
-    position: absolute;
-    top: 0;
-    width: 100%;
-    padding: 12px;
-    visibility: hidden;
-    opacity: 0;
-    -webkit-transition: all .4s;
-    -moz-transition: all .4s;
-    -o-transition: all .4s;
-}
-
-.mF_fancy .txt li a {
-    display: block;
-    color: #fff;
-    font-size: 14px;
-    font-weight: bold;
-    text-decoration: none;
-    font-family: '微软雅黑';
-}
-
-
-/*标题样式*/
-
-.mF_fancy .txt li p {
-    display: none;
-}
-
-
-/* 导航栏 */
+/* 下面是导航栏的相关内容 */
 
 #daohang {
     width: 100%;
@@ -410,120 +340,4 @@
     border: dotted #332B28 1px;
     width: 72%;
     margin: 0 auto;
-}
-
-
-/*隐藏详细描述文字*/
-
-.mF_fancy .txt li.current {
-    visibility: visible;
-    opacity: 1;
-}
-
-.mF_fancy .num {
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    overflow: hidden;
-}
-
-.mF_fancy .num ul {
-    width: 120%;
-    background: #666;
-    margin-left: -1px;
-}
-
-.mF_fancy .num ul li {
-    display: inline-block;
-    *display: inline;
-    *zoom: 1;
-    height: 12px;
-    border-left: 1px solid #ddd;
-    background: #666;
-    overflow: hidden;
-    cursor: pointer;
-    -webkit-transition: all .4s;
-    -moz-transition: all .4s;
-    -o-transition: all .4s;
-}
-
-.mF_fancy .num ul li:hover {
-    background: #ddd;
-}
-
-.mF_fancy .num ul li.current {
-    background: #090909;
-    cursor: default;
-}
-
-.mF_fancy .num ul li a {
-    display: none;
-}
-
-.mF_fancy .thumb {
-    position: absolute;
-    left: 0;
-    bottom: 40px;
-    width: 100%;
-    z-index: 9;
-}
-
-.mF_fancy .thumb ul {
-    width: 120%;
-}
-
-.mF_fancy .thumb ul li {
-    display: inline-block!important;
-    *display: inline!important;
-    *zoom: 1;
-    width: x;
-    position: relative;
-    visibility: hidden;
-    cursor: pointer;
-}
-
-.mF_fancy .thumb ul li img {
-    width: 100%;
-}
-
-.mF_fancy .prev,
-.mF_fancy .next {
-    font: 700 53px/58px arial;
-    width: 37px;
-    height: 65px;
-    overflow: hidden;
-    position: absolute;
-    z-index: 9;
-    left: 0px;
-    cursor: pointer;
-    top: 40%;
-}
-
-.mF_fancy .next {
-    left: auto;
-    right: 0px;
-}
-
-.mF_fancy .prev a,
-.mF_fancy .next a {
-    display: block;
-    color: #fff;
-    text-align: center;
-    text-decoration: none;
-    visibility: hidden;
-    opacity: 0;
-    -webkit-transition: all .4s;
-    -moz-transition: all .4s;
-    -o-transition: all .4s;
-}
-
-.mF_fancy .prev a:hover,
-.mF_fancy .next a:hover {
-    color: #f60;
-}
-
-.mF_fancy .show a {
-    visibility: visible;
-    opacity: 1;
 }
