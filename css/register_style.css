@@ -61,68 +61,62 @@
     position: relative;
 }
 
-.container .main .haserror .err {
+.container .main .haserror #input_name_error {
     color: #f45d90;
     font-size: 12px;
     width: 220px;
     position: absolute;
-    right: -156px;
-    top: 13px;
+    right: -165px;
+    top: 10px;
 }
 
+#input_pass_error {
+    color: #f45d90;
+    font-size: 12px;
+    width: 220px;
+    position: absolute;
+    right: -159px;
+    top: 8px;
+}
 
-/* 
-.container .main .haserror input {
-    border-color: #f45d90;
-} */
+#input_pass_format_error {
+    color: #f45d90;
+    font-size: 12px;
+    width: 220px;
+    position: absolute;
+    right: -189px;
+    top: 8px;
+}
 
+#input_r_pass_error {
+    color: #f45d90;
+    font-size: 12px;
+    width: 220px;
+    position: absolute;
+    right: -177px;
+    bottom: 253px;
+}
 
-/* 安全系数 */
+#input_email_null_error {
+    color: #f45d90;
+    font-size: 12px;
+    width: 220px;
+    position: absolute;
+    right: -160px;
+    bottom: 182px;
+}
+
+#input_email_error {
+    color: #f45d90;
+    font-size: 12px;
+    width: 220px;
+    position: absolute;
+    right: -166px;
+    bottom: 182px;
+}
 
 .container .main .safety {
     position: relative;
-}
-
-.container .main .safety .factor {
-    position: absolute;
-    top: -27px;
-    width: 100%;
-}
-
-.container .main .safety .factor .left {
-    position: absolute;
-    width: 300px;
-    height: 20px;
-}
-
-.container .main .safety .factor .left .title {
-    width: 80px;
-    float: left;
-    font-weight: bold;
-}
-
-.container .main .safety .factor .left .icon {
-    margin-left: 20px;
-}
-
-.container .main .safety .factor .left li {
-    float: left;
-    width: 30px;
-    height: 5px;
-    border-radius: 5px;
-    margin: 6px;
-}
-
-
-/* 安全系数文字 */
-
-.container .main .safety .factor {
-    position: absolute;
-    right: 70px;
-    font-size: 12px;
-    color: #49c519;
-    font-family: "PingFang SC,Hiragino Sans GB,Microsoft YaHei,sans-serif";
-    font-weight: 700;
 }
 
 .container .main .input input::-webkit-input-placeholder {
@@ -145,57 +139,9 @@
     color: #909399;
 }
 
-.main .input .section,
-.main .input .input-tel {
-    float: left;
-    height: 40px;
-    box-sizing: border-box;
-}
-
-.main .input .section {
-    width: 130px;
-}
-
-.main .input .section .titile {
-    line-height: 38px;
-    border: 1px solid #dcdfe6;
-    border-right: none;
-    border-radius: 5px 0 0 5px;
-    box-sizing: border-box;
-    color: #909399;
-    cursor: pointer;
-}
-
-.main .input .section:hover ul {
-    display: block;
-}
-
-.main .input .section ul {
-    line-height: 1.5em;
-    max-height: 255px;
-    font-size: 14px;
-    white-space: nowrap;
-    overflow: hidden;
-    text-overflow: ellipsis;
-    border: 1px solid #e4e7ed;
-    background-color: #fff;
-    border-radius: 5px;
-    position: relative;
-    z-index: 1;
-    overflow-y: scroll;
-    top: 10px;
-    display: none;
-}
-
-.main .input .input-tel input {
-    width: 290px;
-    height: 40px;
-    line-height: 40px;
-    border-radius: 0 5px 5px 0;
-}
-
 .container .main {
     position: relative;
+    right: 50px;
 }
 
 button {
@@ -284,8 +230,4 @@ button:disabled {
 .container .main .login {
     margin-top: -32px;
     text-align: right;
-}
-
-a {
-    font-size: 12px;
 }
