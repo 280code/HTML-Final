@@ -1,0 +1,86 @@
+.clear {
+    clear: both;
+}
+
+#navigation {
+    width: 100%;
+    height: 65px;
+}
+
+#navigation p {
+    position: relative;
+    left: 14%;
+    letter-spacing: 5px;
+}
+
+#navigation a {
+    font-family: 微软雅黑;
+    text-decoration: none;
+    color: black;
+    line-height: 65px;
+}
+
+#navigation a:hover {
+    text-decoration: underline;
+}
+
+#navigation hr {
+    border: dotted #332B28 1px;
+    width: 72%;
+    margin: 0 auto;
+}
+
+#search {
+    position: relative;
+    float: right;
+    top: 8px;
+    margin-right: 14%;
+}
+#left{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+#left img{
+     width: 545px;
+    height: 100%;
+    
+}
+#left h1 {
+    margin-top:20px;
+}
+#right{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.rightImg {
+    width: 470px;
+    height: 100%;
+
+}
+.buyImg {
+    width: 470px;
+    height: 100%;
+
+}
+.proList{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    width:100%;
+    margin-top:20px;
+}
+.proList .chanpintuijian {
+    width:33%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 20px;
+}
+.chanpintuijian img {
+    width: 150px;
+    height: 150px;
+}
