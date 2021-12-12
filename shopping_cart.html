@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>购物车</title>
+    <link rel="stylesheet" href="css/common_style.css">
+    <link rel="stylesheet" href="css/shopping_cart_style.css">
+</head>
+
+<body>
+    <div class="body_cart">
+        <div class="header_cart">
+            <div class="logo">
+                YangStore购物车
+            </div>
+            <div class="searcher">
+                <input type="text">
+                <div class="text">搜索</div>
+            </div>
+        </div>
+        <div class="table">
+            <div class="th">
+                <div class="left">
+                    <div class="td_th activity">全部商品 <span class="amount">61</span></div>
+                    <div class="td_th">降价商品 <span class="amount">1</span></div>
+                    <div class="td_th unable">库存紧张 <span class="amount">0</span></div>
+                    <div class="wrap_line"></div>
+                </div>
+                <div class="right">
+                    <div class="text">已选商品（不含运费）</div>
+                    <span class="amount">0.00</span>
+                    <button class="unable">结算</button>
+                </div>
+            </div>
+            <div class="main">
+                <div class="title_main">
+                    <div class="select_all">
+                        <input type="checkbox"> 全选
+                    </div>
+                    <div class="price">单价</div>
+                    <div class="numbers">数量</div>
+                    <div class="total_price">金额</div>
+                    <div class="option">操作</div>
+                </div>
+                <div class="items">
+                    <div class="item">
+                        <div class="store">
+                            <input type="checkbox"> 店铺：荣耀手机官方旗舰店
+                        </div>
+                        <div class="commodity">
+                            <input type="checkbox" class="select">
+                            <img src="./resource/phone/荣耀畅玩20.jpg" alt="">
+                            <div class="title">现货速发+送碎屏宝 HONOR荣耀畅玩20手机官方旗舰店千元机畅玩20pro手机新品智能学生畅想20手机全网通非华为</div>
+                            <div class="price">￥84.99</div>
+                            <div class="option_numbers">
+                                <button class="sub">-</button>
+                                <input type="text" value="1">
+                                <button class="add">+</button>
+                            </div>
+                            <div class="amount">
+                                ￥84.99
+                            </div>
+                            <div class="option_item">
+                                <div class="go_favorite">移入收藏夹</div>
+                                <div class="delete_item">删除</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <div class="tfoot">
+                <div class="left">
+                    <div class="slect_all">全选</div>
+                    <div class="delete">删除</div>
+                    <div class="to_favorite">移入收藏夹</div>
+                </div>
+                <div class="right">
+                    <div class="count">已选商品<span class="amount">0</span>件 </div>
+                    <div class="total_price">合集（不含运费）：<span class="amount">0.00</span> </div>
+                    <button class="checkout">结算</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+</body>
+<script src="js/navigator_bar.js"></script>
+
+</html>
