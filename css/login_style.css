@@ -61,20 +61,32 @@
     position: relative;
 }
 
-.container .main .haserror .err {
+.container .main .haserror #input_name_error {
+    color: #f45d90;
+    font-size: 12px;
+    width: 220px;
+    position: absolute;
+    right: -165px;
+    top: 10px;
+}
+
+.container .main .safety #input_pass_error {
     color: #f45d90;
     font-size: 12px;
     width: 220px;
     position: absolute;
     right: -156px;
-    top: 13px;
+    bottom: 265px;
 }
 
-
-/* 
-.container .main .haserror input {
-    border-color: #f45d90;
-} */
+#input_pass_null_error {
+    color: #f45d90;
+    font-size: 12px;
+    width: 220px;
+    position: absolute;
+    right: -156px;
+    bottom: 265px;
+}
 
 .container .main .input input::-webkit-input-placeholder {
     color: #909399;
@@ -98,6 +110,7 @@
 
 .container .main {
     position: relative;
+    right: 30px;
 }
 
 button {
@@ -183,11 +196,20 @@ button:disabled {
     border-color: #d9d9d9;
 }
 
-.container .main .login {
-    margin-top: -32px;
+.container .main .register {
+    margin-top: -30px;
     text-align: right;
 }
 
-a {
-    font-size: 12px;
+#login_img {
+    position: fixed;
+    top: 108px;
+    right: 500px;
+}
+
+#login_img_block {
+    position: fixed;
+    top: 108px;
+    right: 500px;
+    visibility: hidden;
 }
