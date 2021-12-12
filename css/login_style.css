@@ -204,12 +204,18 @@ button:disabled {
 #login_img {
     position: fixed;
     top: 108px;
-    right: 500px;
+    right: 0;
+    left: 0;
+    margin: auto;
+    width: 211px;
 }
 
 #login_img_block {
     position: fixed;
     top: 108px;
-    right: 500px;
+    right: 0;
+    left: 0;
+    margin: auto;
+    width: 211px;
     visibility: hidden;
 }
