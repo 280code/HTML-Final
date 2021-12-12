@@ -35,5 +35,6 @@ nav.innerHTML = `            <div class="left">
 nav.className = "header_nav";
 let div = document.createElement("div");
 div.style.height = 60 + "px";
+nav.style.f
 document.body.insertAdjacentElement("beforebegin", nav);
 document.body.insertAdjacentElement("afterbegin", div);

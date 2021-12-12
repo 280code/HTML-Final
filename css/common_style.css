@@ -80,7 +80,7 @@
 
 .header_nav>.left span {
     position: relative;
-    bottom: 4px;
+    bottom: 8px;
 }
 
 .iconfont::before {
