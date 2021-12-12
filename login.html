@@ -5,38 +5,39 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/reset_style.css">
+    <link rel="stylesheet" href="css/common_style.css">
     <link rel="stylesheet" href="css/login_style.css">
     <title>登录</title>
 </head>
 
 <body>
-    <div id="header">
-    </div>
-    <div id="primary-menu">
-    </div>
-    <div id="main-login">
-
-        <h2>用户登陆</h2>
-        <div id="login">
-            <form action="" name="regForm" method="get">
-                <div id="username">
-                    <span>用户名：  <input type="text" name="username" placeholder="请输入用户名"></span>
-                </div>
-                <div id="password1">
-                    <span>密&nbsp;&nbsp;&nbsp;码： <input type="password" name="password1" placeholder="请输入密码"></span>
-                </div>
-                <div id="button">
-                    <input type="reset" name="reset" value="重置" id="reset">
-                    <input type="submit" name="ok" value="登陆" id="submit">
-                </div>
-                <div id="forget">
-                    <p>忘记密码？</p>
-                </div>
-            </form>
+    <script src="js/login.js"></script>
+    <div class="container">
+        <div class="title-top">
+            <h1 class="title"><span>登录</span></h1>
+        </div>
+        <div class="main">
+            <div class="input haserror">
+                <input placeholder="用户名" class="input_username" type="text" id="username">
+            </div>
+            <div class="input safety">
+                <input placeholder="密码" type="password" class="password" id="password">
+            </div>
+            <div class="protocol">
+                <label>
+                    <input type="checkbox" name="isChecked" value="yes" onclick="checkeAgreement()">
+                    <span class="checkbox"></span>
+                我已同意<a href="">《YangStore协议》</a>和<a href="">《YangStore隐私政策》</a>
+                </label>
+            </div>
+            <div class="input">
+                <button type="button" disabled="disabled" id="fill" onclick="login()">登录</button>
+            </div>
         </div>
     </div>
-    <div id="foot"><img src="image/logo2.png"></div>
+    </div>
+    <script src="js/navigator_bar.js"></script>
 </body>
 
 </html>

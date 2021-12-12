@@ -1,0 +1,16 @@
+.add_header {
+    background-color: #00000000;
+    box-shadow: none;
+}
+
+body {
+    background-color: #dcdbdc;
+}
+
+video {
+    position: absolute;
+    width: 100%;
+    right: 0;
+    left: 0;
+    margin: auto;
+}

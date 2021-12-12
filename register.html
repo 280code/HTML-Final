@@ -1,1 +1,51 @@
-woniubi lalalaal lalalaalalaalaal dasdjasdkasldnaksjdkoasdjnas hsdjkasndkasdaskdjas
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/register_style.css">
+    <link rel="stylesheet" href="css/common_style.css">
+    <link rel="stylesheet" href="css/reset_style.css">
+    <title>注册</title>
+</head>
+
+<body>
+    <script src="js/register.js"></script>
+    <div class="container">
+        <div class="title-top">
+            <h1 class="title"><span>注册</span></h1>
+        </div>
+        <div class="main">
+            <div class="input haserror">
+                <input placeholder="昵称" class="input_username" type="text" id="username">
+            </div>
+            <div class="input safety">
+                <input placeholder="密码 (6-16个字符组成，区分大小写)" type="password" class="password" id="password">
+            </div>
+            <div class="input ">
+                <input placeholder="再次输入密码" type="password" class="password" id="r-password">
+            </div>
+            <div class="input email">
+                <input placeholder="邮箱" class="input_username" type="email" id="email">
+            </div>
+            <div class="protocol">
+                <label>
+                    <input type="checkbox" name="isChecked" value="yes" onclick="checkeAgreement()">
+                    <span class="checkbox"></span>
+                我已同意<a href="">《YangStore协议》</a>和<a href="">《YangStore隐私政策》</a>
+                </label>
+            </div>
+            <div class="input">
+                <button type="button" disabled="disabled" id="fill" onclick="checkCommits()">注册</button>
+            </div>
+            <div class="login">
+                <a href="login.html">已有账号，直接登录></a>
+            </div>
+        </div>
+    </div>
+    <script src="js/navigator_bar.js"></script>
+</body>
+
+</html>
