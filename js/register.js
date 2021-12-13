@@ -74,6 +74,7 @@ function checkCommits() {
     // store in localstorage
     // the key is the username, value is the password
     localStorage.setItem(`${username.value}`, password.value);
+    localStorage.setItem(`${username.value}-email`, email.value);
 
     // navigate to login page
     window.location.href = "login.html";
