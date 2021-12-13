@@ -148,9 +148,8 @@
 /*----------------侧边栏-----------*/
 
 .aside_nav {
-    width: 215px;
     position: fixed;
-    top: 18px;
+    top: 10px;
     z-index: 200;
     padding: 15px 16px 0px 16px;
     right: -286px;
