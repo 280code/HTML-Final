@@ -29,12 +29,72 @@ nav.innerHTML = `            <div class="left">
                 <a href="about.html"><i class="iconfont icon-aboutus"></i></a>
                 <a href="favorites.html"><i  class="iconfont icon-favorite"></i></a>
                 <a href="shopping_cart.html"><i  class="iconfont icon-cart"></i></a>
-                <a href="login.html"><i  class="iconfont icon-user "></i>
+                <a href="login.html"><i id="userLogo"  class="iconfont icon-user "></i>
                 </a>
             </div>`
 nav.className = "header_nav";
 let div = document.createElement("div");
 div.style.height = 60 + "px";
 document.body.insertAdjacentHTML("beforebegin", '<link rel="shortcut icon" href="resource/logo/Y.svg" type="image/x-icon">');
-document.body.insertAdjacentElement("beforebegin", nav);
+document.body.insertAdjacentElement("afterbegin", nav);
 document.body.insertAdjacentElement("afterbegin", div);
+//侧边栏
+let aside = document.createElement("aside");
+let offsetAside = -286;
+let visibleAside = false;
+aside.className = "aside_nav";
+aside.innerHTML = `<div class="title">等级5</div>
+            <div class="main">
+                <div class="user_info">
+                    <img src="./resource/user/avatar.jpg" alt="">
+                    <div class="right">
+                        <div class="username">Alex Lin</div>
+                        <div class="email">290@qq.com</div>
+                    </div>
+                </div>
+                <ul class="option">
+                    <li><i class="iconfont icon-orders"></i><span>订单</span></li>
+                    <li><i class="iconfont icon-subscriptions"></i><span>订阅</span></li>
+                    <li><i class="iconfont icon-setting"></i> </i><span>设置</span></li>
+                    <li><i class="iconfont icon-home"></i><span>主页</span></li>
+                    <li><i class="iconfont icon-tuichu"></i><span>退出</span></li>
+                </ul>
+            </div>`
+document.body.insertAdjacentElement("afterbegin", aside);
+let userLogo = document.querySelector("#userLogo");
+userLogo.addEventListener("mouseover", () => {
+    if (!visibleAside) {
+        pullOut();
+        visibleAside = true;
+    }
+
+})
+aside.addEventListener("mouseleave", () => {
+        if (visibleAside) {
+            pullGo();
+            visibleAside = false;
+        }
+
+    })
+    //将侧边栏推出来
+function pullOut() {
+    if (offsetAside < 4) {
+        console.log(offsetAside);
+        offsetAside += 18;
+        offsetAside = offsetAside > 4 ? 4 : offsetAside;
+        aside.style.right = offsetAside + "px";
+        requestAnimationFrame(pullOut);
+    }
+
+}
+
+function pullGo() {
+    if (offsetAside > -268) {
+        console.log(offsetAside);
+        offsetAside -= 12;
+        offsetAside = offsetAside < -268 ? -268 : offsetAside;
+        aside.style.right = offsetAside + "px";
+        requestAnimationFrame(pullGo);
+    }
+
+}
