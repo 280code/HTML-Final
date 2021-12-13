@@ -135,6 +135,10 @@
     width: 150px;
 }
 
+#row select option {
+    text-align: center;
+}
+
 .xiaomi_img {
     width: 70px;
     height: 70px;
@@ -145,6 +149,8 @@
 /* 下面是侧边栏的相关代码---------------------------------------- */
 
 .sidebar {
+    display: none;
+    z-index: 1;
     position: absolute;
     top: 30;
     left: 0;
