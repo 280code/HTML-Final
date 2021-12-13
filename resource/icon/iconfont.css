@@ -1,47 +1,45 @@
 @font-face {
-  font-family: "iconfont"; /* Project id 3004625 */
-  src: url('iconfont.woff2?t=1639308408978') format('woff2'),
-       url('iconfont.woff?t=1639308408978') format('woff'),
-       url('iconfont.ttf?t=1639308408978') format('truetype');
+    font-family: "iconfont";
+    /* Project id 3004625 */
+    src: url('iconfont.woff?t=1639308408978') format('woff'), url('iconfont.ttf?t=1639308408978') format('truetype');
 }
 
 .iconfont {
-  font-family: "iconfont" !important;
-  font-size: 16px;
-  font-style: normal;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+    font-family: "iconfont" !important;
+    font-size: 16px;
+    font-style: normal;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
 }
 
 .icon-right_arrow:before {
-  content: "\e61f";
+    content: "\e61f";
 }
 
 .icon-left_arrow:before {
-  content: "\e63b";
+    content: "\e63b";
 }
 
 .icon-Y:before {
-  content: "\e60d";
+    content: "\e60d";
 }
 
 .icon-aboutus:before {
-  content: "\e652";
+    content: "\e652";
 }
 
 .icon-shouye:before {
-  content: "\e637";
+    content: "\e637";
 }
 
 .icon-favorite:before {
-  content: "\e629";
+    content: "\e629";
 }
 
 .icon-cart:before {
-  content: "\e73c";
+    content: "\e73c";
 }
 
 .icon-user:before {
-  content: "\e60a";
+    content: "\e60a";
 }
-

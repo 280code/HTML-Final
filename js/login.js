@@ -33,6 +33,9 @@ function login() {
             return false;
         }
     }
+    // 数据存储online
+    localStorage.setItem("online", username.value);
+    // 跳转
     window.location.href = "index.html";
 }
 
