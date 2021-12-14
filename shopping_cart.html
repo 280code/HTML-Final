@@ -9,7 +9,8 @@
     <link rel="stylesheet" href="css/common_style.css">
     <link rel="stylesheet" href="css/shopping_cart_style.css">
     <link rel="shortcut icon" href="resource/logo/Y.svg" type="image/x-icon">
-    <script src="./js/guard.js"></script>
+    <script src="js/common.js"></script>
+    <!-- <script src="./js/guard.js"></script> -->
 </head>
 
 <body>
@@ -90,6 +91,11 @@
             </div>
 
         </div>
+        <div class="empty">
+            <img src="./resource/logo/no_order.png" alt="">
+            <div class="text">您的购物车还是空的，赶紧行动起来吧，点击去往<a href="./favorites_main.html">收藏夹</a>
+            </div>
+        </div>
         <div class="recommend">
             <div class="title">
                 猜你喜欢
@@ -119,8 +125,22 @@
             </div>
         </div>
 
+    </div>
+    <div class="delete_tip">
+        <div class="main_delete">
+            <div class="i iconfont icon-aboutus"></div>
+            <div class="right_delete">
+                <div class="info">确认要删除宝贝吗？</div>
+                <div class="option">
+                    <button class="confirm">确定</button>
+                    <button class="cancel">关闭</button>
+                </div>
+            </div>
 
+        </div>
+    </div>
 </body>
 <script src="js/navigator_bar.js"></script>
+<script src="js/shopping_cart.js"></script>
 
 </html>

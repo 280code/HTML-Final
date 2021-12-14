@@ -268,6 +268,8 @@
 
 .recommend .banner {
     margin: 50px 0;
+    width: 990px;
+    overflow: hidden;
 }
 
 .recommend .item {
@@ -365,10 +367,128 @@
     background-color: rgba(0, 0, 0, 0.5);
     color: white;
     position: absolute;
-    top: 90px;
     cursor: pointer;
 }
 
-.icon-right_arrow:before {
+.icon-left_arrow {
+    left: -54px;
+}
+
+.icon-right_arrow {
+    right: -54px;
+}
+
+.arrow i {
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    bottom: 193px;
+    border: 1px solid;
+}
+
+.empty {
+    display: flex;
+    margin: 95px 0;
+    justify-content: center;
+    position: relative;
+    display: none;
+}
+
+.empty img {
+    width: 800px
+}
+
+.empty .text {
+    position: absolute;
+    bottom: 102px;
+    left: 241px;
+    color: #8c8e90;
+}
+
+.empty a {
+    color: #3366cc;
+}
+
+.empty a:hover {
+    cursor: pointer;
+}
+
+
+/*-----------删除商品提示框------------*/
+
+.delete_tip {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.2);
+    left: 0;
+    top: 0;
+}
+
+.main_delete {
+    position: fixed;
+    left: 0;
     right: 0;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    width: 256px;
+    height: 100px;
+    padding: 20px 20px 20px 30px;
+    background-color: #fff;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+    display: flex;
+}
+
+.main_delete .title {
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.main_delete .info {
+    font-size: 12px;
+    margin: 20px 0;
+}
+
+.main_delete .icon-aboutus::before {
+    color: #18bfff;
+    font-size: 40px;
+}
+
+.main_delete .i {
+    margin-top: 11px;
+    margin-right: 21px;
+}
+
+.main_delete button {
+    box-sizing: border-box;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+    border: none;
+    width: 80px;
+    height: 40px;
+    background-color: #fff;
+    border: 1px solid #aaa;
+    margin-right: 10px;
+}
+
+.main_delete button:hover {
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+.main_delete .cancel:hover {
+    color: tomato
+}
+
+.main_delete .confirm {
+    background-color: #52a0e5;
+    color: white;
 }
