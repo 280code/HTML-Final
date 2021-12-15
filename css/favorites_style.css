@@ -137,10 +137,22 @@
         position: absolute;
         left: 145px;
     }
+    /*.cloth-love>.picture>.delete img {
+        display: none;
+    }*/
+    /*.cloth-love>.picture>.delete img:hover {
+        display: block;
+    }*/
+    
+    .cloth-love img {
+        height: 136px;
+        width: 197px;
+    }
     
     .cloth-love>.picture>.delete img {
         height: 24px;
         width: 25px;
+        opacity: 0.6;
     }
     
     .cloth-love>.picture>.text {
@@ -149,6 +161,9 @@
         left: 5px;
         right: 5px;
     }
+    /*.cloth-love>.picture>.text .bottmo p:hover {
+        display: block;
+    }*/
     
     .cloth-love>.picture>.text>.bottmo p {
         display: inline-block;
@@ -157,4 +172,5 @@
         height: 25px;
         width: 62px;
         font-size: 5px;
+        /*display: none;*/
     }
