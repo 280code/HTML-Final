@@ -57,6 +57,7 @@ class ShoppingCarts {
     }
     removeCommodity(index) {
         //移除购物车商品链和商品信息
+        //
         localStorage.removeItem(`${username1}-commodity${index}`);
         localStorage.removeItem(`${username1}-commodity${index}-info`);
         let size = localStorage.getItem(`${username1}-commoditySize`);

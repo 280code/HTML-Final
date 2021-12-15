@@ -364,8 +364,8 @@
     height: 50px;
     line-height: 50px;
     text-align: center;
-    background-color: rgba(0, 0, 0, 0.5);
-    color: white;
+    background-color: rgba(0, 0, 0, 0.2);
+    color: inherit;
     position: absolute;
     cursor: pointer;
 }
@@ -383,7 +383,12 @@
     width: 50px;
     height: 50px;
     bottom: 193px;
-    border: 1px solid;
+    color: white
+}
+
+.arrow i:hover {
+    background-color: rgba(0, 0, 0, 0.3);
+    color: #ccc;
 }
 
 .empty {
@@ -423,6 +428,7 @@
     background-color: rgba(0, 0, 0, 0.2);
     left: 0;
     top: 0;
+    display: none;
 }
 
 .main_delete {
