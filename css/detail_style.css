@@ -87,17 +87,15 @@
     }
     
     .rightImg {
-        width: 1000px;
+        width: 437px;
     }
     
     .buyphone {
+        height: 71px;
+        right: -317px;
         position: relative;
-        width: 80px;
-        height: 72px;
-        right: -142px;
-        position: relative;
-        width: 498px;
-        top: -372px;
+        width: 423px;
+        top: -349px;
         background: #ff5200;
     }
     
