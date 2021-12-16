@@ -1,86 +1,112 @@
-.clear {
-    clear: both;
-}
-
-#navigation {
-    width: 100%;
-    height: 65px;
-}
-
-#navigation p {
-    position: relative;
-    left: 14%;
-    letter-spacing: 5px;
-}
-
-#navigation a {
-    font-family: 微软雅黑;
-    text-decoration: none;
-    color: black;
-    line-height: 65px;
-}
-
-#navigation a:hover {
-    text-decoration: underline;
-}
-
-#navigation hr {
-    border: dotted #332B28 1px;
-    width: 72%;
-    margin: 0 auto;
-}
-
-#search {
-    position: relative;
-    float: right;
-    top: 8px;
-    margin-right: 14%;
-}
-#left{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-}
-#left img{
-     width: 545px;
-    height: 100%;
+    .clear {
+        clear: both;
+    }
     
-}
-#left h1 {
-    margin-top:20px;
-}
-#right{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-.rightImg {
-    width: 470px;
-    height: 100%;
-
-}
-.buyImg {
-    width: 470px;
-    height: 100%;
-
-}
-.proList{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    flex-wrap: wrap;
-    width:100%;
-    margin-top:20px;
-}
-.proList .chanpintuijian {
-    width:33%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin-bottom: 20px;
-}
-.chanpintuijian img {
-    width: 150px;
-    height: 150px;
-}
+    #navigation {
+        width: 100%;
+        height: 65px;
+    }
+    
+    #navigation p {
+        position: relative;
+        left: 14%;
+        letter-spacing: 5px;
+    }
+    
+    #navigation a {
+        font-family: 微软雅黑;
+        text-decoration: none;
+        color: black;
+        line-height: 65px;
+    }
+    
+    #navigation a:hover {
+        text-decoration: underline;
+    }
+    
+    #navigation hr {
+        border: dotted #332B28 1px;
+        width: 72%;
+        margin: 0 auto;
+    }
+    
+    #search {
+        position: relative;
+        float: right;
+        top: 8px;
+        margin-right: 14%;
+    }
+    
+    #left {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    #left img {
+        width: 545px;
+        height: 100%;
+    }
+    
+    #left h1 {
+        margin-top: 20px;
+    }
+    
+    #right {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    .buyImg {
+        width: 470px;
+        height: 100%;
+    }
+    
+    .proList {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        flex-wrap: wrap;
+        width: 100%;
+        margin-top: 20px;
+    }
+    
+    .proList .chanpintuijian {
+        width: 15%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 20px;
+    }
+    
+    .chanpintuijian img {
+        width: 150px;
+        height: 150px;
+    }
+    
+    .rightImg {
+        width: 1000px;
+    }
+    
+    .buyphone {
+        position: relative;
+        width: 80px;
+        height: 72px;
+        right: -142px;
+        position: relative;
+        width: 498px;
+        top: -372px;
+        background: #ff5200;
+    }
+    
+    .chanpintuijian p {
+        color: #ffce00;
+    }
+    
+    .price {
+        color: #ffce00;
+        width: 50px;
+        font-size: 40px
+    }
