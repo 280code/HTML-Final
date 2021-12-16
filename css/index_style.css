@@ -3,6 +3,11 @@
     box-shadow: none;
 }
 
+.add_header .submenu {
+    background-color: inherit;
+    border: none;
+}
+
 body {
     background-color: #dcdbdc;
 }
@@ -10,7 +15,7 @@ body {
 video {
     position: absolute;
     width: 100%;
-    right: 0;
-    left: 0;
-    margin: auto;
+    height: 100%;
+    -o-object-fit: cover;
+    object-fit: cover;
 }

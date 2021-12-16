@@ -8,34 +8,46 @@
     <link rel="stylesheet" href="css/reset_style.css">
     <link rel="stylesheet" href="css/common_style.css">
     <link rel="stylesheet" href="css/login_style.css">
+    <link rel="shortcut icon" href="resource/logo/Y.svg" type="image/x-icon">
     <title>登录</title>
 </head>
 
 <body>
     <script src="js/login.js"></script>
+    <div id="login_img">
+        <img src="resource/login/owl-login.png">
+    </div>
+    <div id="login_img_block">
+        <img src="resource/login/owl-blockeye-login.png">
+    </div>
     <div class="container">
         <div class="title-top">
             <h1 class="title"><span>登录</span></h1>
         </div>
         <div class="main">
             <div class="input haserror">
-                <input placeholder="用户名" class="input_username" type="text" id="username">
+                <input placeholder="用户名" class="input_username" type="text" id="username" onfocus="claeName()">
+                <div id="input_name_error" hidden="true">用户名不得为空！</div>
             </div>
             <div class="input safety">
-                <input placeholder="密码" type="password" class="password" id="password">
+                <input placeholder="密码" type="password" class="password" id="password" onfocus="clearPass()" onblur="handsOff()">
+                <div id="input_pass_null_error" hidden="true">密码不能为空！</div>
+                <div id="input_pass_error" hidden="true">用户名或密码错误！</div>
             </div>
             <div class="protocol">
                 <label>
                     <input type="checkbox" name="isChecked" value="yes" onclick="checkeAgreement()">
                     <span class="checkbox"></span>
-                我已同意<a href="">《YangStore协议》</a>和<a href="">《YangStore隐私政策》</a>
+                我已同意<a href="#">《YangStore协议》</a>和<a href="#">《YangStore隐私政策》</a>
                 </label>
             </div>
             <div class="input">
                 <button type="button" disabled="disabled" id="fill" onclick="login()">登录</button>
             </div>
+            <div class="register">
+                <a href="register.html">还没账号？先注册一个></a>
+            </div>
         </div>
-    </div>
     </div>
     <script src="js/navigator_bar.js"></script>
 </body>

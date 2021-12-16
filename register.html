@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="css/register_style.css">
     <link rel="stylesheet" href="css/common_style.css">
     <link rel="stylesheet" href="css/reset_style.css">
+    <link rel="shortcut icon" href="resource/logo/Y.svg" type="image/x-icon">
     <title>注册</title>
 </head>
 
@@ -19,16 +20,22 @@
         </div>
         <div class="main">
             <div class="input haserror">
-                <input placeholder="昵称" class="input_username" type="text" id="username">
+                <input placeholder="昵称" class="input_username" type="text" id="username" onfocus="clearName()">
+                <div id="input_name_error" hidden="false">用户名不能为空！</div>
             </div>
             <div class="input safety">
-                <input placeholder="密码 (6-16个字符组成，区分大小写)" type="password" class="password" id="password">
+                <input placeholder="密码 (6-16个字符组成，区分大小写)" type="password" class="password" id="password" onfocus="clearPass()">
+                <div id="input_pass_error" hidden="false">密码不能为空！</div>
+                <div id="input_pass_format_error" hidden="false">密码长度应在6-16范围内！</div>
             </div>
             <div class="input ">
-                <input placeholder="再次输入密码" type="password" class="password" id="r-password">
+                <input placeholder="再次输入密码" type="password" class="password" id="r-password" onfocus="clearRPass()">
+                <div id="input_r_pass_error" hidden="false">两次密码输入不一致！</div>
             </div>
             <div class="input email">
-                <input placeholder="邮箱" class="input_username" type="email" id="email">
+                <input placeholder="邮箱" class="input_username" type="email" id="email" onfocus="clearEmail()">
+                <div id="input_email_null_error" hidden="false">邮箱不能为空！</div>
+                <div id="input_email_error" hidden="false">邮箱不符合规范！</div>
             </div>
             <div class="protocol">
                 <label>

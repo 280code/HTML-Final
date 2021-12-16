@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>导航</title>
     <link rel="stylesheet" href="css/common_style.css">
-    <link rel="stylesheet" href="resource/icon/iconfont.css">
+    <link rel="shortcut icon" href="resource/logo/Y.svg" type="image/x-icon">
     <style>
         body {
             background-color: #eff7f3;
@@ -44,12 +44,32 @@
             </div>
             <div class="right ">
                 <a href="about.html"><i class="iconfont icon-aboutus"></i></a>
-                <a href="favorites.html"><i  class="iconfont icon-favorite"></i></a>
+                <a href="favorites_main.html"><i  class="iconfont icon-favorite"></i></a>
                 <a href="shopping_cart.html"><i  class="iconfont icon-cart"></i></a>
-                <a href="login.html"><i  class="iconfont icon-user "></i>
+                <a href="login.html"><i id="user" class="iconfont icon-user "></i>
                 </a>
             </div>
         </nav>
+        <aside class="aside_nav">
+            <div class="title">等级5</div>
+            <div class="main_aside">
+                <div class="user_info">
+                    <img src="./resource/user/avatar.jpg" alt="">
+                    <div class="right">
+                        <div class="username">Alex Lin</div>
+                        <div class="email">290@qq.com</div>
+                    </div>
+                </div>
+                <ul class="option">
+                    <li><i class="iconfont icon-orders"></i><span>订单</span></li>
+                    <li><i class="iconfont icon-subscriptions"></i><span>订阅</span></li>
+                    <li><i class="iconfont icon-setting"></i> </i><span>设置</span></li>
+                    <li><i class="iconfont icon-home"></i><span>主页</span></li>
+                    <li id="exit"><i class="iconfont icon-tuichu"></i><span>退出</span></li>
+                </ul>
+            </div>
+
+        </aside>
         <img src="./resource/phone/google_pixel6pro.jpg" alt="">
         <img src="./resource/phone/google_pixel6pro.jpg" alt="">
     </body>

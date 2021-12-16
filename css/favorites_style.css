@@ -1,0 +1,165 @@
+#primary-menu {
+    width: 100%;
+    height: 60px;
+    background: #77dbce;
+}
+
+#search {
+    position: relative;
+    float: right;
+    top: 16px;
+    margin-right: 14%;
+}
+
+.gray_button {
+    width: 60px;
+    height: 30px;
+    padding: 0 10px;
+    box-sizing: border-box;
+    background-color: #73d5ee;
+    color: white;
+    font-size: 15px;
+    border-color: white;
+}
+
+.gray_input {
+    width: 200px;
+    height: 30px;
+    padding: 0 10px;
+    box-sizing: border-box;
+}
+
+#big-menu {
+    position: relative;
+    float: left;
+    margin-left: 15%;
+    height: 60px;
+}
+
+#big-menu ul {
+    position: relative;
+    list-style: none;
+    height: 60px;
+    text-align: center;
+}
+
+#big-menu li {
+    position: relative;
+    float: left;
+    width: 150px;
+    height: 60px;
+}
+
+#big-menu li:hover {
+    background-color: #5bb39d;
+}
+
+.click {
+    background-color: #5bb39d;
+}
+
+#big-menu li ul {
+    position: relative;
+    list-style: none;
+    height: 60px;
+    text-align: center;
+    float: left;
+    z-index: 5;
+    display: none;
+}
+
+#big-menu a {
+    color: white;
+    font-family: "微软雅黑";
+    text-decoration: none;
+    font-size: 25px;
+    letter-spacing: 0.75px;
+    line-height: 25px;
+    vertical-align: top;
+    line-height: 60px;
+}
+
+#big-menu ul li:hover ul {
+    display: block;
+}
+
+.clear {
+    clear: both;
+}
+
+#main-allBaby {
+    width: 72%;
+    margin: 0 auto;
+    height: 900px;
+}
+
+h2 {
+    font-weight: bold;
+    letter-spacing: 5px;
+    padding-top: 15px;
+    padding-bottom: 25px;
+}
+
+.cloth-love {
+    width: 260px;
+    height: 340px;
+    position: relative;
+    float: left;
+    left: 120px;
+    text-align: center;
+}
+
+.cloth-love p {
+    letter-spacing: 1px;
+    line-height: 25px;
+}
+
+.cloth-love>.baby_failed p {
+    font-size: smaller;
+}
+
+.cloth-love>.baby_failed img {
+    height: 50px;
+    width: 60px;
+}
+
+.cloth-love>.picture {
+    height: 136px;
+    width: 197px;
+    position: relative;
+    margin: 0px 0px 0px 31px;
+    /*上 右 下 左（顺时针）*/
+}
+
+.cloth-love>.picture>.delete {
+    position: absolute;
+    left: 145px;
+}
+
+.cloth-love>.picture>.delete img {
+    height: 24px;
+    width: 25px;
+}
+
+.cloth-love>.picture>.text {
+    position: absolute;
+    top: 111px;
+    left: 5px;
+    right: 5px;
+}
+
+.cloth-love>.picture>.text>.bottmo h3 {
+    background-color: rgb(128, 128, 128, 0.5);
+    color: white;
+    height: 25px;
+    width: 62px;
+    font-size: 5px;
+}
+
+div h3 {
+    display: none;
+}
+
+div:hover h3 {
+    display: inline-block;
+}

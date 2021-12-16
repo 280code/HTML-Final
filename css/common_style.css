@@ -68,7 +68,7 @@
 
 .header_nav>.left {
     display: flex;
-    width: 300px;
+    width: 400px;
     justify-content: space-between;
     align-items: center;
 }
@@ -98,6 +98,11 @@
     margin-right: 5px;
 }
 
+.header_nav .right i {
+    width: 28px;
+    height: 28px;
+}
+
 
 /*---------导航二级菜单--------------*/
 
@@ -106,13 +111,14 @@
     position: relative;
     height: 60px;
     line-height: 60px;
+    width: 100px;
+    text-align: center;
 }
 
 .submenu {
     position: absolute;
     top: 60px;
-    left: -50px;
-    width: 130px;
+    width: 100px;
     /* border-top: none; */
     background: white;
     border: 1px solid rgb(0 0 0 / 10%);
@@ -120,13 +126,106 @@
     display: none;
 }
 
-.phone:hover .submenu,
-.computer:hover .submenu {
+
+/* .left>.phone:hover,
+.left>.computer:hover {
+    background-color: #f5f5f5;
+} */
+
+.left>.phone:hover .submenu,
+.left>.computer:hover .submenu {
     display: block;
+    /* background-color: #f5f5f5; */
 }
 
 .submenu li {
     height: 40px;
     line-height: 40px;
     text-align: center;
+}
+
+
+/*----------------侧边栏-----------*/
+
+.aside_nav {
+    position: fixed;
+    top: 10px;
+    z-index: 200;
+    padding: 15px 16px 0px 16px;
+    right: -286px;
+    background-color: white;
+    border: 1px solid #dcdcdc;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+}
+
+.aside_nav .title {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.user_info {
+    display: flex;
+    margin: 19px 0;
+}
+
+.user_info img {
+    width: 80px;
+    height: 60px;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+}
+
+.user_info .right {
+    margin-left: 10px;
+}
+
+.user_info .username {
+    font-size: 26px;
+    font-weight: bold;
+}
+
+.user_info .email {
+    font-size: 16px;
+}
+
+.main .option {
+    margin-left: 22px;
+}
+
+.option li {
+    height: 50px;
+    cursor: pointer;
+}
+
+.option li:hover {
+    color: #027cb0;
+}
+
+.option li span {
+    position: relative;
+    top: -5px;
+    left: 12px;
+}
+
+.option li:nth-child(5) {
+    margin-left: 3px;
+}
+
+.option li:nth-child(3) span {
+    margin-left: -8px;
+}
+
+.icon-setting::before {
+    font-size: 33px;
+}
+
+.icon-tuichu::before {
+    font-size: 24px;
 }
