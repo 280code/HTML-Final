@@ -172,10 +172,10 @@
 
 #title span {
     font-size: 20px;
-    font-family: 微软雅黑;
     position: relative;
-    top: 137px;
+    top: 30px;
     font-weight: bold;
+    left: -5px;
     right: 445px;
 }
 
@@ -187,22 +187,22 @@
 }
 
 .p1 img {
-    width: 1127px;
+    width: 1263px;
     height: 723px;
-    margin: 0 auto;
-    position: relative;
-    top: 2px;
-    left: -180px;
+}
+
+#xiaomi_phone {
+    display: flex;
 }
 
 #xiaomi_title span {
     font-size: 20px;
-    font-family: 微软雅黑;
     position: relative;
-    top: 20px;
+    top: -14px;
     font-weight: bold;
     text-align: center;
     right: 14%;
+    left: -288px;
 }
 
 #xiaomi {
@@ -211,44 +211,31 @@
 }
 
 .p7 img {
-    position: relative;
-    float: left;
-    width: 1117px;
-    height: 540px;
-    top: 30px;
-    left: -30%;
-    margin-right: 10px;
+    width: 629px;
+    height: 541px;
 }
 
 .p8 img {
-    position: relative;
-    float: left;
-    width: 925px;
+    width: 634px;
     height: 540px;
-    top: -510px;
-    right: -59%;
-    margin-right: 10px;
+}
+
+#recommomd {
+    display: flex;
+    justify-content: center;
 }
 
 .recommomd1 img {
-    top: -338px;
-    width: 354px;
-    height: 545px;
-    position: relative;
-    float: left;
-    text-align: center;
+    width: 355px;
+    height: 555px;
     left: 30%;
-    padding: 5px;
     border: 1px solid;
+    margin-right: 20px;
 }
 
 .recommomd2 img {
     width: 349px;
     height: 545px;
-    position: relative;
-    float: left;
-    text-align: center;
-    left: 31%;
     padding: 5px;
     top: -338px;
     border: 1px solid;
@@ -256,14 +243,14 @@
 
 .recommomd1 span {
     position: relative;
-    top: 687px;
-    left: -433px;
+    top: 12px;
+    right: -462px;
 }
 
 .recommomd2 span {
     position: relative;
-    top: 593px;
-    left: -82px;
+    top: 9px;
+    left: -291px;
 }
 
 .phone_ {
