@@ -1,0 +1,35 @@
+#main-allBaby {
+    width: 72%;
+    margin: 0 auto;
+    height: 900px;
+}
+
+h2 {
+    font-weight: bold;
+    letter-spacing: 5px;
+    padding-top: 15px;
+    padding-bottom: 25px;
+}
+
+.cloth-love {
+    width: 260px;
+    height: 340px;
+    position: relative;
+    float: left;
+    left: 120px;
+    text-align: center;
+}
+
+.cloth-love a {
+    letter-spacing: 1px;
+    line-height: 25px;
+}
+
+.cloth-love>.baby_failed p {
+    font-size: smaller;
+}
+
+.cloth-love>.baby_failed img {
+    height: 50px;
+    width: 60px;
+}
