@@ -21,6 +21,25 @@
 }
 
 
+/* 去掉number类型的input输入框的上下箭头
+ */
+
+
+/*谷歌*/
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+}
+
+
+/*火狐*/
+
+input[type="number"] {
+    -moz-appearance: none;
+}
+
+
 /*全局样式*/
 
 

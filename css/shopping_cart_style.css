@@ -68,7 +68,8 @@
 }
 
 .table .amount,
-.amount_checkout {
+.amount_checkout,
+.amount_select {
     color: #eb523f;
 }
 
@@ -88,7 +89,7 @@
     align-items: center;
 }
 
-.right button {
+.right .checkout {
     background-color: #eb523f;
     border: none;
     color: white;
@@ -98,7 +99,7 @@
     margin-left: 8px;
 }
 
-.right button.unable {
+.right .checkout.unable {
     background-color: #aaa;
 }
 
@@ -269,7 +270,7 @@
     color: #eb5231;
 }
 
-button:hover:not(.unable) {
+.checkout:hover:not(.unable) {
     cursor: pointer;
     background-color: #e14c3a;
 }
