@@ -3,7 +3,7 @@
     }
     
     #navigation {
-        width: 100%;
+        width: 396px;
         height: 65px;
     }
     
@@ -97,6 +97,9 @@
         width: 423px;
         top: -349px;
         background: #ff5200;
+        cursor: pointer;
+        border-radius: 5px;
+        border: none;
     }
     
     .chanpintuijian p {
