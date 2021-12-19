@@ -67,7 +67,9 @@
     text-align: center;
 }
 
-.table .amount {
+.table .amount,
+.amount_checkout,
+.amount_select {
     color: #eb523f;
 }
 
@@ -87,16 +89,17 @@
     align-items: center;
 }
 
-.right button {
+.right .checkout {
     background-color: #eb523f;
     border: none;
     color: white;
     height: 30px;
     width: 60px;
     border-radius: 5px;
+    margin-left: 8px;
 }
 
-.right button.unable {
+.right .checkout.unable {
     background-color: #aaa;
 }
 
@@ -129,10 +132,6 @@
 
 .title_main>* {
     position: absolute;
-}
-
-.title_main .select_all {
-    left: 0;
 }
 
 .title_main .price {
@@ -217,8 +216,9 @@
     text-align: center;
 }
 
-.commodity .amount {
+.commodity .amount_item {
     left: 770px;
+    color: #eb523f;
 }
 
 .commodity .option_item {
@@ -234,6 +234,9 @@
     color: #eb523f;
     cursor: pointer;
 }
+
+
+/* -----------------购物车底部操作区------------*/
 
 .table .tfoot {
     display: flex;
@@ -259,6 +262,17 @@
     height: 50px;
     width: 110px;
     font-size: 22px;
+}
+
+.tfoot .delete:hover,
+.tfoot .to_favorite:hover {
+    cursor: pointer;
+    color: #eb5231;
+}
+
+.checkout:hover:not(.unable) {
+    cursor: pointer;
+    background-color: #e14c3a;
 }
 
 .recommend {
@@ -421,17 +435,20 @@
 
 /*-----------删除商品提示框------------*/
 
-.delete_tip {
+.delete_tip,
+.noselect_tip {
     position: fixed;
     width: 100%;
     height: 100%;
     background-color: rgba(0, 0, 0, 0.2);
     left: 0;
     top: 0;
+    z-index: 200;
     display: none;
 }
 
-.main_delete {
+.main_delete,
+.main_noselect {
     position: fixed;
     left: 0;
     right: 0;
@@ -460,7 +477,8 @@
     margin: 20px 0;
 }
 
-.main_delete .icon-aboutus::before {
+.main_delete .icon-aboutus::before,
+.noselect_tip .icon-aboutus::before {
     color: #18bfff;
     font-size: 40px;
 }
@@ -497,4 +515,33 @@
 .main_delete .confirm {
     background-color: #52a0e5;
     color: white;
+}
+
+
+/*-----------请选择商品提示框------------*/
+
+.noselect_tip .info {
+    height: 30px;
+    margin-top: 11px;
+    margin-left: 9px;
+}
+
+.main_noselect {
+    width: 226px;
+    height: 40px;
+}
+
+.noselect_tip .x {
+    color: #ccc;
+    height: 14px;
+    position: relative;
+    font-weight: bold;
+    left: 92px;
+    top: -14px;
+    font-size: 10px;
+    cursor: pointer;
+}
+
+.icon-cancel::before {
+    font-size: inherit;
 }
