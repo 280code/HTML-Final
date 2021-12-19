@@ -1,7 +1,7 @@
                 #primary-menu {
                     width: 100%;
                     height: 60px;
-                    background: #77dbce;
+                    background: linear-gradient(to right, rgb(114, 216, 145), #73eeee);
                 }
                 
                 #search {
@@ -51,11 +51,11 @@
                 }
                 
                 #big-menu li:hover {
-                    background-color: #5bb39d;
+                    background-color: #36ca74;
                 }
                 
                 .click {
-                    background-color: #5bb39d;
+                    background-color: #36ca74;
                 }
                 
                 #big-menu li ul {
@@ -90,22 +90,29 @@
                     width: 72%;
                     margin: 0 auto;
                     height: 900px;
+                    position: relative;
                 }
                 
                 h2 {
                     font-weight: bold;
                     letter-spacing: 5px;
                     padding-top: 15px;
-                    padding-bottom: 25px;
+                    color: rgb(17, 122, 129);
+                    display: inline-block;
+                }
+                
+                h3 {
+                    color: rgb(17, 122, 129);
+                    text-align: center;
                 }
                 
                 .cloth-love {
                     width: 260px;
-                    height: 340px;
+                    height: 200px;
                     position: relative;
                     float: left;
-                    left: 120px;
                     text-align: center;
+                    margin: 50px 0 0 0;
                 }
                 
                 .cloth-love a {
@@ -148,7 +155,11 @@
                 
                 .cloth-love img {
                     height: 136px;
-                    width: 197px;
+                    width: 70px;
+                }
+                
+                .tu img {
+                    width: 95px;
                 }
                 
                 .cloth-love>.picture>.text {
@@ -268,4 +279,65 @@
                 
                 .cloth-love>.delete>.text>.select {
                     margin: 10px 0px 0 0;
+                }
+                
+                .clear {
+                    clear: both;
+                }
+                
+                .proList {
+                    display: flex;
+                    flex-direction: row;
+                    justify-content: space-around;
+                    flex-wrap: wrap;
+                    width: 100%;
+                    margin-top: 20px;
+                }
+                
+                .proList .chanpintuijian {
+                    width: 15%;
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    margin-bottom: 20px;
+                }
+                
+                .chanpintuijian img {
+                    width: 70px;
+                    height: 150px;
+                }
+                
+                .chanpintuijian p {
+                    color: #43a1c7;
+                }
+                
+                span {
+                    color: #43a1c7;
+                }
+                
+                .xian {
+                    margin: 15px 0 0 0;
+                    width: 1000px;
+                    height: 1px;
+                    background: linear-gradient(to bottom, rgb(187, 184, 184), #43a1c7);
+                }
+                
+                .xian2 {
+                    margin: 0 0px 0 250px;
+                    width: 1000px;
+                    height: 1px;
+                    background: linear-gradient(to bottom, rgb(187, 184, 184), #43a1c7);
+                }
+                
+                .san {
+                    height: 5%;
+                    display: inline-block;
+                }
+                
+                .san img {
+                    height: 50px;
+                    width: 50px;
+                    position: absolute;
+                    left: 980px;
+                    top: 13px;
                 }
