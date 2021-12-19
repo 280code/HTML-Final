@@ -28,7 +28,7 @@ for (let i = 0; i < 4; i++) {
                     <div class="question">确定删除？</div>
                     <div class="select">
                         <a href="#" class="yes">确定</a>
-                        <a href="#" onclick="no1();" class="no">取消</a>
+                        <a href="#"  class="no nol">取消</a>
                     </div>
                 </div>
 
@@ -37,7 +37,7 @@ for (let i = 0; i < 4; i++) {
             <div class="picture">
                 <div class="text">
 
-                    <a href="#" onclick="delete1()">
+                    <a href="#" class="delete1">
                         <img src="resource/favorites/delete-01.jpg" alt="">
                     </a>
                     <div class="left">
@@ -79,3 +79,23 @@ function no1() {
     }
 
 }
+//遍历
+function init() {
+    let clothLoves = document.querySelectorAll(".cloth-love");
+    //遍历每个收藏
+    clothLoves.forEach((clothLoves) => {
+        //获取垃圾桶图标
+        let delete1 = clothLoves.querySelector(".delete1");
+        //给每个垃圾桶绑定事件
+        delete1.addEventListener("click", () => {
+            clothLoves.querySelector(".delete").style.display = "block";
+
+        })
+        let nol = clothLoves.querySelector(".nol");
+        //给取消按钮事件绑定点击事件
+        nol.addEventListener("click", () => {
+            clothLoves.querySelector(".delete").style.display = "none";
+        })
+    })
+}
+init();
