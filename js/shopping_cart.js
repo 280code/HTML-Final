@@ -1,5 +1,4 @@
 /*全局变量*/
-let cartSize = 3; //购物车内店铺的数量
 let selectNum = 0; //选中商品数量
 let acount = 0; //支付总金额
 let arrowParent = document.querySelector(".arrow");
@@ -43,69 +42,38 @@ function init() {
     let items = document.querySelector(".items");
     //购物车内的店铺
     let stores = getStores();
-    //遍历购物车内的店铺
-    stores.forEach((store) => {
-        let storeDiv = document.createElement("div");
-        storeDiv.className = "store";
-        //得到初始化html类
-        let inithtml = new InitHtml(store);
-        //得到店铺标题,并且装配进店铺元素中
-        let storeTitle = inithtml.getStoreTitle();
-        storeDiv.innerHTML = storeTitle;
-        //得到店铺内的商品
-        let commoditys = store.commoditys;
-        //准备购物车店铺内商品的html
-        let html = "";
-        //遍历店铺内的商品
-        commoditys.forEach((commodity) => {
-                html += inithtml.getCommodity(commodity);
-            })
-            //将商品加入到店铺元素中
-        storeDiv.insertAdjacentHTML("beforeend", html);
-        //将店铺加入到购物车
-        items.insertAdjacentElement("beforeend", storeDiv);
-    })
+    if (stores.length != 0) {
+        isEmpty(false);
+        //遍历购物车内的店铺
+        stores.forEach((store) => {
+            let storeDiv = document.createElement("div");
+            storeDiv.className = "store";
+            //得到初始化html类
+            let inithtml = new InitHtml(store);
+            //得到店铺标题,并且装配进店铺元素中
+            let storeTitle = inithtml.getStoreTitle();
+            storeDiv.innerHTML = storeTitle;
+            //得到店铺内的商品
+            let commoditys = store.commoditys;
+            //准备购物车店铺内商品的html
+            let html = "";
+            //遍历店铺内的商品
+            commoditys.forEach((commodity) => {
+                    html += inithtml.getCommodity(commodity);
+                })
+                //将商品加入到店铺元素中
+            storeDiv.insertAdjacentHTML("beforeend", html);
+            //将店铺加入到购物车
+            items.insertAdjacentElement("beforeend", storeDiv);
+        })
+    } else {
+        isEmpty(true);
+    }
+
 
 }
 //初始化
 init();
-
-
-function getStores() {
-    let stores = [{
-            //第一家店铺 
-            name: "店铺1：荣耀手机官方旗舰店",
-            commoditys: [{
-                    title: "现货速发+送碎屏宝 HONOR荣耀畅玩20手机官方旗舰店千元机畅玩20pro手机新品智能学生畅想20手机全网通非华为",
-                    price: 884.99,
-                    src: "./resource/phone/荣耀畅玩20.jpg"
-                },
-                {
-                    title: "现货速发+送碎屏宝 HONOR荣耀畅玩20手机官方旗舰店千元机畅玩20pro手机新品智能学生畅想20手机全网通非华为",
-                    price: 884.99,
-                    src: "./resource/phone/荣耀畅玩20.jpg"
-                }
-            ]
-        },
-        //第二家店铺
-        {
-            name: "店铺2：荣耀手机官方旗舰店",
-            commoditys: [{
-                    title: "现货速发+送碎屏宝 HONOR荣耀畅玩20手机官方旗舰店千元机畅玩20pro手机新品智能学生畅想20手机全网通非华为",
-                    price: 884.99,
-                    src: "./resource/phone/荣耀畅玩20.jpg"
-                },
-                {
-                    title: "现货速发+送碎屏宝 HONOR荣耀畅玩20手机官方旗舰店千元机畅玩20pro手机新品智能学生畅想20手机全网通非华为",
-                    price: 884.99,
-                    src: "./resource/phone/荣耀畅玩20.jpg"
-                }
-            ]
-        }
-    ]
-    return stores;
-}
-
 
 
 banner.addEventListener("mouseenter", () => {
@@ -115,17 +83,20 @@ banner.addEventListener("mouseleave", () => {
         disappear();
     })
     //-54px
-let i = true;
-let empty = document.querySelector(".empty");
-let table = document.querySelector(".table");
+
 let promptd = document.querySelector(".delete_tip");
 //切换空状态和有商品状态
-function toSwitch() {
+function isEmpty(i) {
+
+    let empty = document.querySelector(".empty");
+    let table = document.querySelector(".table");
     if (i) {
+        //如果为空则显示空界面
         empty.style.display = "block";
         table.style.display = "none";
         i = false;
     } else {
+        //如果不为空则显示购物车内商品
         empty.style.display = "none";
         table.style.display = "block";
         i = true;
@@ -193,7 +164,7 @@ checkAll.forEach((item) => {
     item.addEventListener("click", function() {
         if (this.checked) {
             //当前选中的数量为购物车所有商品的数量
-            selectNum = cartSize;
+            selectNum = getCartSize();
             //将所有选项框都改为选中状态
             document.querySelectorAll("input[type='checkbox']")
                 .forEach((item) => { item.checked = true });
@@ -218,6 +189,15 @@ deleteft.addEventListener("click", () => {
     if (selectNum == 0) {
         noselect.style.display = "block";
     } else {
+        //询问是否真的要删除
+        let delTipDiv = document.querySelector(".delete_tip");
+        delTipDiv.style.display = "block";
+        let confirmButton = delTipDiv.querySelector(".confirm");
+        confirmButton.addEventListener("click", () => {
+            clearCart();
+            init();
+            delTipDiv.style.display = "none";
+        })
 
     }
 });
@@ -257,6 +237,8 @@ document.querySelectorAll(".checkout").forEach((item) => {
             alert("支付成功，祝您生活愉快");
             selectNum = 0;
             buttonCheck();
+            clearCart();
+            init();
         }
 
     })
@@ -264,31 +246,32 @@ document.querySelectorAll(".checkout").forEach((item) => {
 
 
 //设置店铺选项框部分
-let store = document.querySelectorAll(".store");
-store.forEach((store) => {
-    let checkboxStrore = store.querySelector(".checkbox_store");
-    checkboxStrore.addEventListener("click", function() {
-        let subCheckbox = store.querySelectorAll(".select_commodity");
-        if (this.checked) {
-            //如果选中则
-            subCheckbox.forEach((item) => {
-                item.checked = true;
-                selectNum++;
-            })
-            buttonCheck();
-        } else {
-            subCheckbox.forEach((item) => {
-                item.checked = false;
-                selectNum--;
-            });
-            buttonCheck();
-        }
+function setSelect() {
+    let store = document.querySelectorAll(".store");
+    store.forEach((store) => {
+        let checkboxStrore = store.querySelector(".checkbox_store");
+        checkboxStrore.addEventListener("click", function() {
+            let subCheckbox = store.querySelectorAll(".select_commodity");
+            if (this.checked) {
+                //如果选中则
+                subCheckbox.forEach((item) => {
+                    item.checked = true;
+                    selectNum++;
+                })
+                buttonCheck();
+            } else {
+                subCheckbox.forEach((item) => {
+                    item.checked = false;
+                    selectNum--;
+                });
+                buttonCheck();
+            }
+        })
+
+
     })
-
-
-})
-
-
+}
+setSelect();
 /*---------------结算按钮部分--------------------*/
 function buttonCheck() {
     //如果商品数不为0，则结算按钮去除”unable"样式
@@ -355,9 +338,9 @@ function updateAmount() {
  */
 
 //获取所有店铺元素
-let stores = document.querySelectorAll(".store");
-stores.forEach((store) => {
-        let commoditys = store.querySelectorAll(".commodity");
+let storesDiv = document.querySelectorAll(".store");
+storesDiv.forEach((storeDiv) => {
+        let commoditys = storeDiv.querySelectorAll(".commodity");
         //遍历所有商品
         commoditys.forEach((commodity) => {
             //获取该商品的总金额元素
@@ -406,3 +389,66 @@ stores.forEach((store) => {
 function toFloat(num) {
     return Math.floor(parseFloat(num) * 100) / 100;
 }
+//清除购物车
+function clearCart() {
+    let username = localStorage.getItem("online");
+    let name = `${username}-cart`
+    let cart = JSON.parse(localStorage.getItem(`${name}`));
+    cart.stores = [];
+    localStorage.setItem(`${name}`, JSON.stringify(cart));
+}
+
+function initCart() {
+    let cart = {
+        stores: []
+    }
+    let username = localStorage.getItem("online");
+    localStorage.setItem(`${username}-cart`, JSON.stringify(cart));
+}
+
+function addInCart() {
+    let store = {
+        //第一家店铺 
+        name: "店铺：小米手机官方旗舰店",
+        commoditys: [{
+            title: "现货速发+送碎屏宝 HONOR荣耀畅玩20手机官方旗舰店千元机畅玩20pro手机新品智能学生畅想20手机全网通非华为",
+            price: 884.99,
+            src: "./resource/phone/荣耀畅玩20.jpg"
+        }]
+    }
+    let cart = getCart();
+    cart.stores.push(store);
+    setCart(cart);
+}
+
+//获取购物车内的店铺信息
+function getStores() {
+
+    let cart = getCart();
+    return cart.stores;
+}
+//获取购物车内的商品数
+function getCartSize() {
+    let num = 0;
+    let stores = getStores();
+    stores.forEach((store) => {
+        let commoditys = store.commoditys;
+        commoditys.forEach((commodity) => {
+            num++;
+        })
+    })
+    return num;
+}
+
+function getCart() {
+    username = localStorage.online;
+    let cart = JSON.parse(localStorage.getItem(`${username}-cart`));
+    return cart;
+}
+
+function setCart(cart) {
+    let username = localStorage.online;
+    localStorage.setItem(`${username}-cart`,
+        JSON.stringify(cart));
+}
+//底部推荐轮播

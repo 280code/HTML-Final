@@ -9,8 +9,8 @@
     <link rel="stylesheet" href="css/common_style.css">
     <link rel="stylesheet" href="css/shopping_cart_style.css">
     <link rel="shortcut icon" href="resource/logo/Y.svg" type="image/x-icon">
-    <script src="js/common.js"></script>
-    <!-- <script src="./js/guard.js"></script> -->
+
+    <script src="./js/guard.js"></script>
 </head>
 
 <body>
@@ -28,7 +28,7 @@
             <div class="th">
                 <div class="left">
                     <div class="td_th activity">全部商品 <span class="amount">61</span></div>
-                    <div class="td_th">降价商品 <span class="amount">1</span></div>
+                    <div class="td_th ">降价商品 <span class="amount">1</span></div>
                     <div class="td_th unable">库存紧张 <span class="amount">0</span></div>
                     <div class="wrap_line"></div>
                 </div>
@@ -49,104 +49,84 @@
                     <div class="option">操作</div>
                 </div>
                 <div class="items">
-                    <div class="store">
-                        <input class="checkbox_store" type="checkbox"> 店铺：荣耀手机官方旗舰店
-                        <div class="commodity">
-                            <input type="checkbox" class="select_commodity">
-                            <img src="./resource/phone/荣耀畅玩20.jpg" alt="">
-                            <div class="title">现货速发+送碎屏宝 HONOR荣耀畅玩20手机官方旗舰店千元机畅玩20pro手机新品智能学生畅想20手机全网通非华为</div>
-                            <div class="price"><span class="price_num">84.99</span></div>
-                            <div class="option_numbers">
-                                <button class="sub">-</button>
-                                <input type="number" min=1 value="1" onkeyup="this.value=this.value.match(/\d{1,5}/g)">
-                                <button class="add">+</button>
-                            </div>
-                            <div class="amount_item">
-                                ￥<span class="total_money">84.99</span>
-                            </div>
-                            <div class="option_item">
-                                <div class="go_favorite">移入收藏夹</div>
-                                <div class="delete_item">删除</div>
-                            </div>
+                </div>
+
+            </div>
+            <div class="tfoot">
+                <div class="left">
+                    <div>
+                        <input class="select_all" class="check_select_all" type="checkbox"> 全选
+                    </div>
+                    <div class="delete">删除</div>
+                    <div class="to_favorite">移入收藏夹</div>
+                </div>
+                <div class="right">
+                    <div class="count">已选商品<span class="amount_select">0</span>件 </div>
+                    <div class="total_price">合集（不含运费）：<span class="amount_checkout">0.00</span> </div>
+                    <button class="checkout unable">结算</button>
+                </div>
+            </div>
+
+        </div>
+        <div class="empty">
+            <img src="./resource/logo/no_order.png" alt="">
+            <div class="text">您的购物车还是空的，赶紧行动起来吧，点击去往<a href="./favorites_main.html">收藏夹</a>
+            </div>
+        </div>
+        <div class="recommend">
+            <div class="title">
+                猜你喜欢
+            </div>
+            <div class="banner">
+                <div class="items_banner">
+                    <a class="item" href="./details.html">
+                        <img src="./resource/phone/荣耀畅玩20.jpg" alt="">
+                        <div class="price">
+                            <div class="current_price">￥889.50</div>
+                            <div class="original_price">￥1889.50</div>
                         </div>
-                    </div>
-
-                </div>
-                <div class="tfoot">
-                    <div class="left">
-                        <div>
-                            <input class="select_all" class="check_select_all" type="checkbox"> 全选
-                        </div>
-                        <div class="delete">删除</div>
-                        <div class="to_favorite">移入收藏夹</div>
-                    </div>
-                    <div class="right">
-                        <div class="count">已选商品<span class="amount_select">0</span>件 </div>
-                        <div class="total_price">合集（不含运费）：<span class="amount_checkout">0.00</span> </div>
-                        <button class="checkout unable">结算</button>
-                    </div>
+                        <div class="title">现货速发+送碎屏宝 HONOR荣耀畅玩20手机官方旗舰店千元机畅玩20pro手机新品智能学生畅想20手机全网通非华为</div>
+                        <div class="sales">月销500笔</div>
+                        <div class="reason">根据您的偏好“手机”推荐</div>
+                    </a>
                 </div>
 
-            </div>
-            <div class="empty">
-                <img src="./resource/logo/no_order.png" alt="">
-                <div class="text">您的购物车还是空的，赶紧行动起来吧，点击去往<a href="./favorites_main.html">收藏夹</a>
+                <div class="pots">
+                    <div class="pot1"></div>
+                    <div class="pot2"></div>
+                    <div class="pot3"></div>
+                    <div class="pot4"></div>
+                    <div class="pot5"></div>
+                </div>
+                <div class="arrow">
+                    <i class="iconfont icon-left_arrow"></i>
+                    <i class="iconfont icon-right_arrow"></i>
                 </div>
             </div>
-            <div class="recommend">
-                <div class="title">
-                    猜你喜欢
-                </div>
-                <div class="banner">
-                    <div class="items_banner">
-                        <a class="item" href="./details.html">
-                            <img src="./resource/phone/荣耀畅玩20.jpg" alt="">
-                            <div class="price">
-                                <div class="current_price">￥889.50</div>
-                                <div class="original_price">￥1889.50</div>
-                            </div>
-                            <div class="title">现货速发+送碎屏宝 HONOR荣耀畅玩20手机官方旗舰店千元机畅玩20pro手机新品智能学生畅想20手机全网通非华为</div>
-                            <div class="sales">月销500笔</div>
-                            <div class="reason">根据您的偏好“手机”推荐</div>
-                        </a>
-                    </div>
+        </div>
 
-                    <div class="pots">
-                        <div class="pot1"></div>
-                        <div class="pot2"></div>
-                        <div class="pot3"></div>
-                        <div class="pot4"></div>
-                        <div class="pot5"></div>
-                    </div>
-                    <div class="arrow">
-                        <i class="iconfont icon-left_arrow"></i>
-                        <i class="iconfont icon-right_arrow"></i>
-                    </div>
+    </div>
+    <div class="delete_tip">
+        <div class="main_delete">
+            <div class="i iconfont icon-aboutus"></div>
+            <div class="right_delete">
+                <div class="info">确认要删除宝贝吗？</div>
+                <div class="option">
+                    <button class="confirm">确定</button>
+                    <button class="cancel">关闭</button>
                 </div>
             </div>
 
         </div>
-        <div class="delete_tip">
-            <div class="main_delete">
-                <div class="i iconfont icon-aboutus"></div>
-                <div class="right_delete">
-                    <div class="info">确认要删除宝贝吗？</div>
-                    <div class="option">
-                        <button class="confirm">确定</button>
-                        <button class="cancel">关闭</button>
-                    </div>
-                </div>
-
-            </div>
+    </div>
+    <div class="noselect_tip">
+        <div class="main_noselect">
+            <div class="i iconfont icon-aboutus"></div>
+            <div class="info">请选择商品!</div>
+            <div class="x iconfont icon-cancel"></div>
         </div>
-        <div class="noselect_tip">
-            <div class="main_noselect">
-                <div class="i iconfont icon-aboutus"></div>
-                <div class="info">请选择商品!</div>
-                <div class="x iconfont icon-cancel"></div>
-            </div>
 
-        </div>
+    </div>
 </body>
 <script src="js/navigator_bar.js"></script>
 <script src="js/shopping_cart.js"></script>

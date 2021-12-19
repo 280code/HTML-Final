@@ -12,10 +12,60 @@ body {
     background-color: #dcdbdc;
 }
 
+.item {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+}
+
 video {
     position: absolute;
+    top: 0;
     width: 100%;
     height: 100%;
     -o-object-fit: cover;
     object-fit: cover;
+}
+
+.button {
+    display: flex;
+    width: 100%;
+    position: absolute;
+    bottom: 20px;
+}
+
+.buy,
+.learnMore {
+    box-sizing: border-box;
+    flex: 2;
+    height: 44px;
+    cursor: pointer;
+}
+
+.buy {
+    margin-right: 10px;
+    margin-left: 10px;
+    border: none;
+}
+
+.buy:hover {
+    background-color: rgba(255, 255, 255, 0.8);
+}
+
+.learnMore:hover {
+    border: 3px solid white;
+}
+
+.learnMore {
+    flex: 2;
+    left: 280px;
+    background-color: rgba(0, 0, 0, 0.02);
+    border: 1px solid white;
+    color: white;
+}
+
+.button::after {
+    display: block;
+    content: "";
+    flex: 6;
 }
