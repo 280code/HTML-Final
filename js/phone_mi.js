@@ -62,7 +62,7 @@ let mainRight = document.createElement("div");
 mainRight.id = "main-right";
 let html = '';
 let lenght = miPhone.length;
-for (let i = 0; i < 4; i++) {
+for (let i = 0; i < 3; i++) {
     let item = miPhone[1];
     html += `<div id="picgroup">
             <a href="./details.html">
