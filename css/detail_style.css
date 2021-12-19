@@ -16,8 +16,9 @@
     #navigation a {
         font-family: 微软雅黑;
         text-decoration: none;
-        color: black;
         line-height: 65px;
+        letter-spacing: 5px;
+        color: rgb(17, 122, 129);
     }
     
     #navigation a:hover {
@@ -57,6 +58,7 @@
         display: flex;
         align-items: center;
         justify-content: center;
+        margin: 70px 0 0 0;
     }
     
     .buyImg {
@@ -82,12 +84,20 @@
     }
     
     .chanpintuijian img {
-        width: 150px;
+        width: 70px;
         height: 150px;
     }
     
+    .chanpintuijian p {
+        color: #43a1c7;
+    }
+    
+    span {
+        color: #43a1c7;
+    }
+    
     .rightImg {
-        width: 437px;
+        width: 400px;
     }
     
     .buyphone {
@@ -96,18 +106,41 @@
         position: relative;
         width: 423px;
         top: -349px;
-        background: #ff5200;
+        background: linear-gradient(to right, rgb(114, 216, 145), #73eeee);
         cursor: pointer;
         border-radius: 5px;
         border: none;
-    }
-    
-    .chanpintuijian p {
-        color: #ffce00;
+        color: white;
+        font-size: 20px;
     }
     
     .price {
         color: #ffce00;
         width: 50px;
         font-size: 40px
+    }
+    
+    h3 {
+        color: rgb(17, 122, 129);
+        text-align: center;
+    }
+    
+    .xian2 {
+        margin: 50px 0px 0 250px;
+        width: 1000px;
+        height: 1px;
+        background: linear-gradient(to bottom, rgb(187, 184, 184), #43a1c7);
+    }
+    
+    .xian3 {
+        width: 1520px;
+        height: 1px;
+        background: linear-gradient(to bottom, rgb(187, 184, 184), #43a1c7);
+    }
+    
+    #chanpinmiaoshu {
+        background-image: -webkit-linear-gradient(bottom, rgb(58, 172, 92), rgb(20, 123, 255));
+        -webkit-background-clip: text;
+        color: transparent;
+        margin: 100px 0 0 20px;
     }
