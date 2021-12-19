@@ -37,10 +37,10 @@ for (let i = 0; i < 4; i++) {
                 <img src="resource/phone/fail-03.png">
             </div>
 
-
-            <p>vivo<br>
-                <p><span>¥</span>5500.00</p>
-            </p>
+            <div class="baby_failed">
+                <img src="resource/favorites/fail-01.png" alt="">
+                <p>宝贝失效啦</p>
+            </div>
         </div>`
 
 }
