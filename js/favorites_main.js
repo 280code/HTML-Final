@@ -77,3 +77,10 @@ function no1() {
     }
 
 }
+
+function init() {
+    let clothLoves = document.querySelectorAll(".cloth-love");
+    clothLoves.forEach((clothLoves) => {
+
+    })
+}
