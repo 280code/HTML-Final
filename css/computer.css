@@ -280,3 +280,35 @@
     font-size: 21px;
     background: #d4dcfe;
 }
+
+
+/* 导航栏部分 */
+
+.banner {
+    width: 990px;
+    height: 458px;
+    overflow: hidden;
+    margin: auto;
+    border: 1px solid #edcfed;
+    cursor: pointer;
+}
+
+.banner .item {
+    width: 2970px;
+    display: flex;
+    position: relative;
+    left: -990px;
+}
+
+.title_banner {
+    font-size: 25px;
+    margin: 21px auto;
+    text-align: center;
+}
+
+.banner img {
+    width: 990px;
+    height: 458px;
+    -o-object-fit: cover;
+    object-fit: cover;
+}
