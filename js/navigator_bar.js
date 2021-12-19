@@ -1,5 +1,5 @@
 let nav = document.createElement("nav");
-nav.innerHTML = `            <div class="left">
+nav.innerHTML = `            <div class="left_header">
                 <div class="logo">
                     <a href="index.html"><img src="./resource/logo/Y.svg " alt="YangStore "> <span>YangStore</span></a>
                 </div>
@@ -25,7 +25,7 @@ nav.innerHTML = `            <div class="left">
                 </div>
 
             </div>
-            <div class="right ">
+            <div class="right_header ">
                 <a href="about.html"><i class="iconfont icon-aboutus"></i></a>
                 <a href="favorites_main.html"><i  class="iconfont icon-favorite"></i></a>
                 <a href="shopping_cart.html"><i  class="iconfont icon-cart"></i></a>
@@ -49,7 +49,7 @@ aside.innerHTML = `<div class="title">等级5</div>
             <div class="main_aside">
                 <div class="user_info">
                     <img src="./resource/user/avatar.jpg" alt="">
-                    <div class="right">
+                    <div class="right_user">
                         <div class="username">${username}</div>
                         <div class="email">${email}</div>
                     </div>

@@ -55,39 +55,14 @@ for (let i = 0; i < 7; i++) {
 }
 
 /*DOM部分*/
-
-
-
-let mainRight = document.createElement("div");
-mainRight.id = "main-right";
-let html = '';
-let lenght = miPhone.length;
-for (let i = 0; i < 3; i++) {
-    let item = miPhone[1];
-    html += `<div id="picgroup">
-            <a href="./details.html">
-                <div class="cloth3"><img src="resource/mi_images/px2-1.webp"><br><span id="title">Redmi 10x 4G</span> <br><span id="price">￥3333.00</span></div>
-            </a>
-            <a href="./details.html">
-                <div class="cloth3"><img src="resource/mi_images/px2-1.webp"><br><span id="title">Redmi 10x 4G</span> <br><span id="price">￥3333.00</span></div>
-            </a>
-            <a href="./details.html">
-                <div class="cloth3"><img src="resource/mi_images/px2-1.webp"><br><span id="title">Redmi 10x 4G</span> <br><span id="price">￥3333.00</span></div>
-            </a>
-        </div>`
+let picGroup = document.querySelector("#picgroup");
+let html = "";
+for (let i = 0; i < 11; i++) {
+    html += `
+    <div class="cloth3">
+        <a id="demo1" href="./details.html">
+            <img src="resource/mi_images/sj1.webp"><br><span id="title">小米MIX3</span> <br><span id="price">￥3333.00</span>
+        </a>
+    </div>`
 }
-
-mainRight.innerHTML = html;
-document.body.insertAdjacentElement("beforeend", mainRight);
-
-let demo2 = document.querySelector("#demo1");
-console.log(demo2)
-demo2.addEventListener("click", () => {
-    alert("hello");
-    localStorage.del = "hello";
-})
-
-function demo(i) {
-    localStorage.demo = i;
-    return false;
-}
+picGroup.insertAdjacentHTML("beforeend", html);
