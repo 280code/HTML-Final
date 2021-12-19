@@ -85,19 +85,19 @@ input[type="number"] {
     color: #3c4043;
 }
 
-.header_nav>.left {
+.header_nav>.left_header {
     display: flex;
     width: 400px;
     justify-content: space-between;
     align-items: center;
 }
 
-.header_nav>.left img {
+.header_nav>.left_header img {
     width: 30px;
     height: 30px;
 }
 
-.header_nav>.left span {
+.header_nav>.left_header span {
     position: relative;
     bottom: 8px;
 }
@@ -117,7 +117,7 @@ input[type="number"] {
     margin-right: 5px;
 }
 
-.header_nav .right i {
+.header_nav .right_header i {
     width: 28px;
     height: 28px;
 }
@@ -125,8 +125,8 @@ input[type="number"] {
 
 /*---------导航二级菜单--------------*/
 
-.left>.phone,
-.left>.computer {
+.left_header>.phone,
+.left_header>.computer {
     position: relative;
     height: 60px;
     line-height: 60px;
@@ -151,8 +151,8 @@ input[type="number"] {
     background-color: #f5f5f5;
 } */
 
-.left>.phone:hover .submenu,
-.left>.computer:hover .submenu {
+.left_header>.phone:hover .submenu,
+.left_header>.computer:hover .submenu {
     display: block;
     /* background-color: #f5f5f5; */
 }
@@ -201,7 +201,7 @@ input[type="number"] {
     -o-border-radius: 50%;
 }
 
-.user_info .right {
+.user_info .right_user {
     margin-left: 10px;
 }
 
