@@ -1,3 +1,21 @@
+//切换空状态和有商品状态
+let i = true;
+let empty = document.querySelector(".empty");
+let allBaby = document.querySelector("#main-allBaby");
+//let promptd = document.querySelector(".delete_tip");
+//切换空状态和有商品状态
+function toSwitch() {
+    if (i) {
+        empty.style.display = "block";
+        allBaby.style.display = "none";
+        i = false;
+    } else {
+        empty.style.display = "none";
+        allBaby.style.display = "block";
+        i = true;
+    }
+}
+
 let favorites_main = document.createElement("div");
 favorites_main.id = "cloth-love";
 //以id为main-allBaby的元素作为插入元素的父元素
@@ -46,24 +64,8 @@ for (let i = 0; i < 4; i++) {
 }
 //在父元素的最后面插入元素
 main.insertAdjacentHTML("beforeend", html);
-//切换空状态和有商品状态
-let i = true;
-let empty = document.querySelector(".empty");
-let allBaby = document.querySelector("#main-allBaby");
-//let promptd = document.querySelector(".delete_tip");
-//切换空状态和有商品状态
-function toSwitch() {
-    if (i) {
-        empty.style.display = "block";
-        allBaby.style.display = "none";
-        i = false;
-    } else {
-        empty.style.display = "none";
-        allBaby.style.display = "block";
-        i = true;
-    }
-}
 
+//选择是否删除商品页面
 function delete1() {
     if (document.querySelector('.delete').style.display = 'none') {
         document.querySelector('.delete').style.display = 'block';
