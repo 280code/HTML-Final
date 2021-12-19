@@ -5,15 +5,26 @@ let main = document.querySelector("#main-allBaby");
 let html = '';
 for (let i = 0; i < 4; i++) {
     html += `        <div class="cloth-love">
-            <div class="picture">
-
+            <div class="delete">
                 <div class="text">
-                    <a href="">
+                    <div class="question">确定删除？</div>
+                    <div class="select">
+                        <a href="#" class="yes">确定</a>
+                        <a href="#" onclick="no1();" class="no">取消</a>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="picture">
+                <div class="text">
+
+                    <a href="#" onclick="delete1();">
                         <img src="resource/favorites/delete-01.jpg" alt="">
                     </a>
                     <div class="left">
                         <a href="">
-                                    进入店铺
+                                    进入商品
                                     </a>
                     </div>
                     <div class="right">
@@ -30,7 +41,6 @@ for (let i = 0; i < 4; i++) {
                 <img src="resource/favorites/fail-01.png" alt="">
                 <p>宝贝失效啦</p>
             </div>
-        </div>
         </div>`
 
 }
@@ -52,4 +62,18 @@ function toSwitch() {
         allBaby.style.display = "block";
         i = true;
     }
+}
+
+function delete1() {
+    if (document.querySelector('.delete').style.display = 'none') {
+        document.querySelector('.delete').style.display = 'block';
+    }
+
+}
+
+function no1() {
+    if (document.querySelector('.delete').style.display = 'block') {
+        document.querySelector('.delete').style.display = 'none';
+    }
+
 }

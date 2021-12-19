@@ -243,3 +243,39 @@ h2 {
 .empty a:hover {
     cursor: pointer;
 }
+
+.cloth-love>.delete {
+    display: none;
+    height: 220px;
+    width: 130px;
+    position: absolute;
+    z-index: 2;
+    left: 65px;
+    background-color: rgba(7, 7, 7, 0.5);
+}
+
+.cloth-love>.delete>.text {
+    margin: 75px 0px;
+    font-size: 5px;
+    color: white;
+}
+
+.cloth-love>.delete>.text>.select>.yes {
+    background-color: #56cfbf;
+    width: 20px;
+    margin: 0 5px 0 0;
+}
+
+.cloth-love>.delete>.text>.select>.yes,
+.no {
+    padding: 5px 7px;
+}
+
+.cloth-love>.delete>.text>.select>.no {
+    background-color: white;
+    color: black;
+}
+
+.cloth-love>.delete>.text>.select {
+    margin: 10px 0px 0 0;
+}

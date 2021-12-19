@@ -5,14 +5,26 @@ let main = document.querySelector("#main-allBaby");
 let html = '';
 for (let i = 0; i < 4; i++) {
     html += `        <div class="cloth-love">
+            <div class="delete">
+                <div class="text">
+                    <div class="question">确定删除？</div>
+                    <div class="select">
+                        <a href="#" class="yes">确定</a>
+                        <a href="#" onclick="no1();" class="no">取消</a>
+                    </div>
+                </div>
+
+            </div>
+
             <div class="picture">
                 <div class="text">
-                    <a href="">
+
+                    <a href="#" onclick="delete1();">
                         <img src="resource/favorites/delete-01.jpg" alt="">
                     </a>
                     <div class="left">
                         <a href="">
-                                    进入店铺
+                                    进入商品
                                     </a>
                     </div>
                     <div class="right">
@@ -24,6 +36,8 @@ for (let i = 0; i < 4; i++) {
                 </div>
                 <img src="resource/phone/fail-03.png">
             </div>
+
+
             <p>vivo<br>
                 <p><span>¥</span>5500.00</p>
             </p>
