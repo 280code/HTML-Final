@@ -19,7 +19,7 @@ for (let i = 0; i < 4; i++) {
             <div class="picture">
                 <div class="text">
 
-                    <a href="#" onclick="delete1();">
+                    <a href="#" onclick="delete1()">
                         <img src="resource/favorites/delete-01.jpg" alt="">
                     </a>
                     <div class="left">
