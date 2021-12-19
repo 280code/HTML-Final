@@ -6,6 +6,7 @@ let html = '';
 for (let i = 0; i < 4; i++) {
     html += `        <div class="cloth-love">
             <div class="picture">
+
                 <div class="text">
                     <a href="">
                         <img src="resource/favorites/delete-01.jpg" alt="">
@@ -24,9 +25,12 @@ for (let i = 0; i < 4; i++) {
                 </div>
                 <img src="resource/phone/fail-03.png">
             </div>
-            <p>vivo<br>
-                <p><span>¥</span>5500.00</p>
-            </p>
+
+            <div class="baby_failed">
+                <img src="resource/favorites/fail-01.png" alt="">
+                <p>宝贝失效啦</p>
+            </div>
+        </div>
         </div>`
 
 }
@@ -48,18 +52,4 @@ function toSwitch() {
         allBaby.style.display = "block";
         i = true;
     }
-}
-
-function delete1() {
-    if (document.querySelector('.delete').style.display = 'none') {
-        document.querySelector('.delete').style.display = 'block';
-    }
-
-}
-
-function no1() {
-    if (document.querySelector('.delete').style.display = 'block') {
-        document.querySelector('.delete').style.display = 'none';
-    }
-
 }
