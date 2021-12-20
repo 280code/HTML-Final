@@ -272,30 +272,30 @@
     margin-left: 91px;
 }
 
-.cloth3 {
+.product {
     position: relative;
     float: right;
     text-align: center;
     padding-top: 0;
 }
 
-.cloth3 img {
+.product img {
     width: 250px;
     height: 250px;
     padding-bottom: 5px;
 }
 
-.cloth3 a {
+.product a {
     font-family: 微软雅黑;
     color: black;
     text-decoration: none;
 }
 
-.cloth3 a:hover {
+.product a:hover {
     text-decoration: underline;
 }
 
-.cloth3 #price {
+.product #price {
     font-family: 微软雅黑;
     color: #4B66B2;
 }
@@ -303,7 +303,7 @@
 
 /* flag */
 
-#main-right #picgroup .cloth3 {
+#main-right #picgroup .product {
     padding-left: 10;
     display: block;
     right: 66.5px;
