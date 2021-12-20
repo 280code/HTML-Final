@@ -26,7 +26,7 @@ changeCommodity();
 
 function addInCart() {
     let store;
-    if (localStorage.page = "apple") {
+    if (localStorage.page == "apple") {
         store = {
             //第一家店铺 
             name: "店铺：苹果电脑官方旗舰店",
