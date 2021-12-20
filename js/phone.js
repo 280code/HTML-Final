@@ -34,8 +34,16 @@ function change() {
 function controller() {
     //轮播由第二张移动到第三张
     move();
+    if (noClick) {
+        setTimeout(controller, time * 1000);
+    }
 
-    setTimeout(controller, time * 1000);
 
 }
 setTimeout(controller, time * 1000);
+let rightArrow = document.querySelector("i.icon-right_arrow");
+console.log(rightArrow);
+rightArrow.addEventListener("click", () => {
+    move();
+
+})
