@@ -38,7 +38,7 @@
 #primary-menu {
     width: 100%;
     height: 60px;
-    background: #332B28;
+    background: linear-gradient(to right, rgb(114, 216, 145), #73eeee);
 }
 
 #search {
@@ -87,7 +87,8 @@
     position: relative;
     float: left;
     width: 150px;
-    background-color: #332B28;
+    /* background: linear-gradient(to bottom, rgb(114, 216, 145), #73eeee); */
+    background-color: rgb(114, 216, 157);
 }
 
 #big-menu a {
@@ -134,6 +135,8 @@
     height: 50px;
     width: 150px;
     text-align: center;
+    border: 2px solid black;
+    border-radius: 0.2em;
 }
 
 .xiaomi_img {
@@ -150,14 +153,14 @@
     top: 30;
     left: 0;
     height: 460px;
-    width: 234px;
-    background: rgba(0, 0, 0, .3);
+    width: 200px;
+    background: linear-gradient(to right, rgb(114, 216, 145), #73eeee);
     padding-top: 20px;
     padding-bottom: 10px;
 }
 
 .sidebar li {
-    width: 236px;
+    width: 200px;
     height: 84px;
     line-height: 32px;
     cursor: pointer;
@@ -180,7 +183,7 @@
 }
 
 .sidebar .qing .org:hover {
-    background-color: #FF4500;
+    background-color: #69ccda;
 }
 
 
@@ -330,7 +333,7 @@
 #daohang a {
     font-family: 微软雅黑;
     text-decoration: none;
-    color: black;
+    color: rgb(17, 122, 129);
     line-height: 65px;
 }
 
@@ -456,4 +459,11 @@
 .mF_fancy .show a {
     visibility: visible;
     opacity: 1;
+}
+
+.xian {
+    margin: 0px 0 0 200px;
+    width: 1110px;
+    height: 1px;
+    background: linear-gradient(to bottom, rgb(187, 184, 184), #43a1c7);
 }

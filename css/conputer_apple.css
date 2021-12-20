@@ -323,6 +323,7 @@
 #daohang {
     width: 100%;
     height: 65px;
+    color: rgb(17, 122, 129);
 }
 
 #daohang p {
@@ -332,9 +333,7 @@
 }
 
 #daohang a {
-    font-family: 微软雅黑;
     text-decoration: none;
-    color: black;
     line-height: 65px;
 }
 
@@ -343,7 +342,7 @@
 }
 
 #daohang hr {
-    border: dotted #332B28 1px;
+    border: dotted rgb(17, 122, 129) 1px;
     width: 72%;
     margin: 0 auto;
 }
@@ -460,4 +459,11 @@
 .mF_fancy .show a {
     visibility: visible;
     opacity: 1;
+}
+
+.xian {
+    margin: 0px 0 0 200px;
+    width: 1110px;
+    height: 1px;
+    background: linear-gradient(to bottom, rgb(187, 184, 184), #43a1c7);
 }
