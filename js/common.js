@@ -37,4 +37,13 @@ function init280code() {
     let username = "280code";
     localStorage.setItem(`${username}-cart`,
         JSON.stringify(cart));
+    localStorage.setItem("280code", "111111");
+    localStorage.setItem("280code-email", "5201314@love.com")
+}
+
+function initUser(username) {
+    let cart = {
+        stores: []
+    }
+    localStorage.setItem(`${username}-cart`, JSON.stringify(cart));
 }

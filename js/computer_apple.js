@@ -2,7 +2,7 @@ localStorage.page = "apple";
 
 let picGroup = document.querySelector("#picgroup");
 let html = "";
-for (let i = 0; i < 31; i++) {
+for (let i = 0; i < 32; i++) {
     html += `            <div class="cloth3">
                 <a id="demo1" href="./details.html">
                     <img src="resource/apple_images/MacBook.jpg"><br>
@@ -12,4 +12,3 @@ for (let i = 0; i < 31; i++) {
             </div>`
 }
 picGroup.insertAdjacentHTML("beforeend", html);
-console.log("hello")

@@ -1,343 +1,345 @@
-                #primary-menu {
-                    width: 100%;
-                    height: 60px;
-                    background: linear-gradient(to right, rgb(114, 216, 145), #73eeee);
-                }
-                
-                #search {
-                    position: relative;
-                    float: right;
-                    top: 16px;
-                    margin-right: 14%;
-                }
-                
-                .gray_button {
-                    width: 60px;
-                    height: 30px;
-                    padding: 0 10px;
-                    box-sizing: border-box;
-                    background-color: #73d5ee;
-                    color: white;
-                    font-size: 15px;
-                    border-color: white;
-                }
-                
-                .gray_input {
-                    width: 200px;
-                    height: 30px;
-                    padding: 0 10px;
-                    box-sizing: border-box;
-                }
-                
-                #big-menu {
-                    position: relative;
-                    float: left;
-                    margin-left: 15%;
-                    height: 60px;
-                }
-                
-                #big-menu ul {
-                    position: relative;
-                    list-style: none;
-                    height: 60px;
-                    text-align: center;
-                }
-                
-                #big-menu li {
-                    position: relative;
-                    float: left;
-                    width: 150px;
-                    height: 60px;
-                }
-                
-                #big-menu li:hover {
-                    background-color: #49d382;
-                }
-                
-                .click {
-                    background-color: #49d382;
-                }
-                
-                #big-menu li ul {
-                    position: relative;
-                    list-style: none;
-                    height: 60px;
-                    text-align: center;
-                    float: left;
-                    z-index: 5;
-                    display: none;
-                }
-                
-                #big-menu a {
-                    color: white;
-                    text-decoration: none;
-                    font-size: 25px;
-                    letter-spacing: 0.75px;
-                    line-height: 25px;
-                    vertical-align: top;
-                    line-height: 60px;
-                }
-                
-                #big-menu ul li:hover ul {
-                    display: block;
-                }
-                
-                .clear {
-                    clear: both;
-                }
-                
-                #main-allBaby {
-                    width: 72%;
-                    margin: 0 auto;
-                    height: 900px;
-                    position: relative;
-                }
-                
-                h2 {
-                    font-weight: bold;
-                    letter-spacing: 5px;
-                    padding-top: 15px;
-                    color: rgb(17, 122, 129);
-                    display: inline-block;
-                }
-                
-                h3 {
-                    color: rgb(17, 122, 129);
-                    text-align: center;
-                }
-                
-                .cloth-love {
-                    width: 260px;
-                    height: 200px;
-                    position: relative;
-                    float: left;
-                    text-align: center;
-                    margin: 50px 0 0 0;
-                }
-                
-                .cloth-love a {
-                    letter-spacing: 1px;
-                    line-height: 25px;
-                }
-                
-                .cloth-love>.baby_failed p {
-                    font-size: smaller;
-                }
-                
-                .cloth-love>.baby_failed img {
-                    height: 50px;
-                    width: 60px;
-                }
-                
-                .cloth-love>.picture {
-                    height: 136px;
-                    width: 197px;
-                    position: relative;
-                    margin: 0px 0px 0px 31px;
-                    /*上 右 下 左（顺时针）*/
-                    z-index: 1;
-                }
-                
-                .cloth-love>.picture>.text img {
-                    height: 24px;
-                    width: 25px;
-                    opacity: 0;
-                    margin: 0px 0px 85px 121px;
-                }
-                
-                .cloth-love>.picture>.text:hover img {
-                    opacity: 0.6;
-                }
-                
-                .cloth-love>.picture>.text img:hover {
-                    background-color: #77dbce;
-                }
-                
-                .cloth-love img {
-                    height: 136px;
-                    width: 70px;
-                }
-                
-                .tu img {
-                    width: 95px;
-                }
-                
-                .cloth-love>.picture>.text {
-                    position: absolute;
-                    left: 35px;
-                    height: 136px;
-                    width: 130px;
-                }
-                
-                .cloth-love>.picture>.text>.left,
-                .right {
-                    opacity: 0;
-                    display: inline-block;
-                }
-                
-                .cloth-love>.picture>.text>.left {
-                    float: left;
-                    width: 60px;
-                }
-                
-                .cloth-love>.picture>.text>.right {
-                    float: right;
-                    width: 60px;
-                }
-                
-                .cloth-love>.picture>.text>.bottom>.right,
-                .left {
-                    opacity: 0;
-                    display: inline-block;
-                }
-                
-                .cloth-love>.picture>.text:hover .left,
-                .text:hover .right {
-                    background-color: rgb(128, 128, 128, 0.5);
-                    color: white;
-                    opacity: 1;
-                    height: 25px;
-                    width: 62px;
-                }
-                
-                .cloth-love>.picture>.text>.left a,
-                .right a {
-                    height: 25px;
-                    width: 62px;
-                    font-size: 5px;
-                }
-                
-                .cloth-love>.picture>.text>.left:hover {
-                    background-color: #77dbce;
-                }
-                
-                .cloth-love>.picture>.text>.right:hover {
-                    background-color: #77dbce;
-                }
-                
-                .empty {
-                    display: flex;
-                    margin: 0px 0px 0px 300px;
-                    justify-content: center;
-                    position: relative;
-                    display: none;
-                }
-                /* #main-allBaby {
+#primary-menu {
+    width: 100%;
+    height: 60px;
+    background: linear-gradient(to right, rgb(114, 216, 145), #73eeee);
+}
+
+#search {
+    position: relative;
+    float: right;
+    top: 16px;
+    margin-right: 14%;
+}
+
+.gray_button {
+    width: 60px;
+    height: 30px;
+    padding: 0 10px;
+    box-sizing: border-box;
+    background-color: #73d5ee;
+    color: white;
+    font-size: 15px;
+    border-color: white;
+}
+
+.gray_input {
+    width: 200px;
+    height: 30px;
+    padding: 0 10px;
+    box-sizing: border-box;
+}
+
+#big-menu {
+    position: relative;
+    float: left;
+    margin-left: 15%;
+    height: 60px;
+}
+
+#big-menu ul {
+    position: relative;
+    list-style: none;
+    height: 60px;
+    text-align: center;
+}
+
+#big-menu li {
+    position: relative;
+    float: left;
+    width: 150px;
+    height: 60px;
+}
+
+#big-menu li:hover {
+    background-color: #49d382;
+}
+
+.click {
+    background-color: #49d382;
+}
+
+#big-menu li ul {
+    position: relative;
+    list-style: none;
+    height: 60px;
+    text-align: center;
+    float: left;
+    z-index: 5;
+    display: none;
+}
+
+#big-menu a {
+    color: white;
+    text-decoration: none;
+    font-size: 25px;
+    letter-spacing: 0.75px;
+    line-height: 25px;
+    vertical-align: top;
+    line-height: 60px;
+}
+
+#big-menu ul li:hover ul {
+    display: block;
+}
+
+.clear {
+    clear: both;
+}
+
+#main-allBaby {
+    width: 72%;
+    margin: 0 auto;
+    height: 900px;
+    position: relative;
+}
+
+h2 {
+    font-weight: bold;
+    letter-spacing: 5px;
+    padding-top: 15px;
+    color: rgb(17, 122, 129);
+    display: inline-block;
+}
+
+h3 {
+    color: rgb(17, 122, 129);
+    text-align: center;
+}
+
+.cloth-love {
+    width: 260px;
+    height: 200px;
+    position: relative;
+    float: left;
+    text-align: center;
+    margin: 50px 0 0 0;
+}
+
+.cloth-love a {
+    letter-spacing: 1px;
+    line-height: 25px;
+}
+
+.cloth-love>.baby_failed p {
+    font-size: smaller;
+}
+
+.cloth-love>.baby_failed img {
+    height: 50px;
+    width: 60px;
+}
+
+.cloth-love>.picture {
+    height: 136px;
+    width: 197px;
+    position: relative;
+    margin: 0px 0px 0px 31px;
+    /*上 右 下 左（顺时针）*/
+    z-index: 1;
+}
+
+.cloth-love>.picture>.text img {
+    height: 24px;
+    width: 25px;
+    opacity: 0;
+    margin: 0px 0px 85px 121px;
+}
+
+.cloth-love>.picture>.text:hover img {
+    opacity: 0.6;
+}
+
+.cloth-love>.picture>.text img:hover {
+    background-color: #77dbce;
+}
+
+.cloth-love img {
+    height: 136px;
+    width: 70px;
+}
+
+.tu img {
+    width: 95px;
+}
+
+.cloth-love>.picture>.text {
+    position: absolute;
+    left: 35px;
+    height: 136px;
+    width: 130px;
+}
+
+.cloth-love>.picture>.text>.left,
+.right {
+    opacity: 0;
+    display: inline-block;
+}
+
+.cloth-love>.picture>.text>.left {
+    float: left;
+    width: 60px;
+}
+
+.cloth-love>.picture>.text>.right {
+    float: right;
+    width: 60px;
+}
+
+.cloth-love>.picture>.text>.bottom>.right,
+.left {
+    opacity: 0;
+    display: inline-block;
+}
+
+.cloth-love>.picture>.text:hover .left,
+.text:hover .right {
+    background-color: rgb(128, 128, 128, 0.5);
+    color: white;
+    opacity: 1;
+    height: 25px;
+    width: 62px;
+}
+
+.cloth-love>.picture>.text>.left a,
+.right a {
+    height: 25px;
+    width: 62px;
+    font-size: 5px;
+}
+
+.cloth-love>.picture>.text>.left:hover {
+    background-color: #77dbce;
+}
+
+.cloth-love>.picture>.text>.right:hover {
+    background-color: #77dbce;
+}
+
+.empty {
+    display: flex;
+    margin: 0px 0px 0px 300px;
+    justify-content: center;
+    position: relative;
+    display: none;
+}
+
+
+/* #main-allBaby {
                     display: none;
                 } */
-                
-                .empty img {
-                    width: 800px
-                }
-                
-                .empty>.text {
-                    position: absolute;
-                    bottom: 102px;
-                    left: 241px;
-                    color: #8c8e90;
-                }
-                
-                .empty a {
-                    color: #3366cc;
-                }
-                
-                .empty a:hover {
-                    cursor: pointer;
-                }
-                
-                .cloth-love>.delete {
-                    display: none;
-                    height: 200px;
-                    width: 130px;
-                    position: absolute;
-                    z-index: 2;
-                    left: 65px;
-                    background-color: rgba(7, 7, 7, 0.5);
-                }
-                
-                .cloth-love>.delete>.text {
-                    margin: 75px 0px;
-                    font-size: 5px;
-                    color: white;
-                }
-                
-                .cloth-love>.delete>.text>.select>.yes {
-                    background-color: #56cfbf;
-                    width: 20px;
-                    margin: 0 5px 0 0;
-                }
-                
-                .cloth-love>.delete>.text>.select>.yes,
-                .no {
-                    padding: 5px 7px;
-                }
-                
-                .cloth-love>.delete>.text>.select>.no {
-                    background-color: white;
-                    color: black;
-                }
-                
-                .cloth-love>.delete>.text>.select {
-                    margin: 10px 0px 0 0;
-                }
-                
-                .clear {
-                    clear: both;
-                }
-                
-                .proList {
-                    display: flex;
-                    flex-direction: row;
-                    justify-content: space-around;
-                    flex-wrap: wrap;
-                    width: 100%;
-                    margin-top: 20px;
-                }
-                
-                .proList .chanpintuijian {
-                    width: 15%;
-                    display: flex;
-                    flex-direction: column;
-                    align-items: center;
-                    margin-bottom: 20px;
-                }
-                
-                .chanpintuijian img {
-                    width: 70px;
-                    height: 150px;
-                }
-                
-                .chanpintuijian p {
-                    color: #43a1c7;
-                }
-                
-                span {
-                    color: #43a1c7;
-                }
-                
-                .xian {
-                    margin: 15px 0 0 0;
-                    width: 1000px;
-                    height: 1px;
-                    background: linear-gradient(to bottom, rgb(187, 184, 184), #43a1c7);
-                }
-                
-                .xian2 {
-                    margin: 0 0px 0 250px;
-                    width: 1000px;
-                    height: 1px;
-                    background: linear-gradient(to bottom, rgb(187, 184, 184), #43a1c7);
-                }
-                
-                .san {
-                    height: 5%;
-                    display: inline-block;
-                }
-                
-                .san img {
-                    height: 50px;
-                    width: 50px;
-                    position: absolute;
-                    left: 980px;
-                    top: 13px;
-                }
+
+.empty img {
+    width: 800px
+}
+
+.empty>.text {
+    position: absolute;
+    bottom: 102px;
+    left: 241px;
+    color: #8c8e90;
+}
+
+.empty a {
+    color: #3366cc;
+}
+
+.empty a:hover {
+    cursor: pointer;
+}
+
+.cloth-love>.delete {
+    display: none;
+    height: 200px;
+    width: 130px;
+    position: absolute;
+    z-index: 2;
+    left: 65px;
+    background-color: rgba(7, 7, 7, 0.5);
+}
+
+.cloth-love>.delete>.text {
+    margin: 75px 0px;
+    font-size: 5px;
+    color: white;
+}
+
+.cloth-love>.delete>.text>.select>.yes {
+    background-color: #56cfbf;
+    width: 20px;
+    margin: 0 5px 0 0;
+}
+
+.cloth-love>.delete>.text>.select>.yes,
+.no {
+    padding: 5px 7px;
+}
+
+.cloth-love>.delete>.text>.select>.no {
+    background-color: white;
+    color: black;
+}
+
+.cloth-love>.delete>.text>.select {
+    margin: 10px 0px 0 0;
+}
+
+.clear {
+    clear: both;
+}
+
+.proList {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    width: 100%;
+    margin-top: 20px;
+}
+
+.proList .chanpintuijian {
+    width: 15%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.chanpintuijian img {
+    width: 70px;
+    height: 150px;
+}
+
+.chanpintuijian p {
+    color: #43a1c7;
+}
+
+span {
+    color: #43a1c7;
+}
+
+.xian {
+    margin: 15px 0 0 0;
+    width: 1000px;
+    height: 1px;
+    background: linear-gradient(to bottom, rgb(187, 184, 184), #43a1c7);
+}
+
+.xian2 {
+    margin: 0 0px 0 250px;
+    width: 1000px;
+    height: 1px;
+    background: linear-gradient(to bottom, rgb(187, 184, 184), #43a1c7);
+}
+
+.san {
+    height: 5%;
+    display: inline-block;
+}
+
+.san img {
+    height: 50px;
+    width: 50px;
+    position: absolute;
+    left: 980px;
+    top: 13px;
+}
