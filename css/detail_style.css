@@ -98,6 +98,7 @@
     
     .rightImg {
         width: 400px;
+        padding-top: 41px;
     }
     
     .buyphone {
@@ -112,6 +113,7 @@
         border: none;
         color: white;
         font-size: 20px;
+        margin-top: 8px;
     }
     
     .price {

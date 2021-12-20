@@ -1,18 +1,16 @@
 //切换空状态和有商品状态
-let i = true;
+
 let empty = document.querySelector(".empty");
 let allBaby = document.querySelector("#main-allBaby");
 //let promptd = document.querySelector(".delete_tip");
 //切换空状态和有商品状态
-function toSwitch() {
+function isEmpty(i) {
     if (i) {
         empty.style.display = "block";
         allBaby.style.display = "none";
-        i = false;
     } else {
         empty.style.display = "none";
         allBaby.style.display = "block";
-        i = true;
     }
 }
 
@@ -81,6 +79,19 @@ function no1() {
 }
 //遍历
 function init() {
+    let user = "";
+    user = localStorage.getItem("online");
+    console.log(user);
+    if (user == "280code") {
+        setDelete()
+    } else {
+        isEmpty(true);
+    }
+
+}
+init();
+
+function setDelete() {
     let clothLoves = document.querySelectorAll(".cloth-love");
     //遍历每个收藏
     clothLoves.forEach((clothLoves) => {
@@ -98,4 +109,3 @@ function init() {
         })
     })
 }
-init();

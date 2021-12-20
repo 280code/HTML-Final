@@ -1,3 +1,4 @@
+localStorage.page = "mi";
 div.style.display = "none";
 nav.style.top = "-60px";
 let offset = -80;

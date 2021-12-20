@@ -1,3 +1,5 @@
+localStorage.page = "apple";
+
 let picGroup = document.querySelector("#picgroup");
 let html = "";
 for (let i = 0; i < 31; i++) {

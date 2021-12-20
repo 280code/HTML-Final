@@ -61,10 +61,10 @@ buyPhone.addEventListener("click", () => {
 })
 
 function changeCommodity() {
-    if (localStorage.page == "computer") {
+    if (localStorage.page == "apple") {
         let img = document.querySelector(".rightImg");
         img.style.marginRight = " 31px";
-        img.src = "resource/computer/macbook.jpg"
+        img.src = "resource/apple_images/MacBook.jpg"
         let chanpinmiaoshu = document.querySelector("#chanpinmiaoshu");
         html = `
                 <h2>产品描述：</h2>
@@ -83,7 +83,7 @@ changeCommodity();
 
 function addInCart() {
     let store;
-    if (localStorage.page = "computer") {
+    if (localStorage.page = "apple") {
         store = {
             //第一家店铺 
             name: "店铺：苹果电脑官方旗舰店",
