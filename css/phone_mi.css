@@ -183,7 +183,7 @@
 }
 
 .sidebar .qing .org:hover {
-    background-color: #69ccda;
+    background: linear-gradient(to right, rgb(74, 214, 116), #3bdddd);
 }
 
 
