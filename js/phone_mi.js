@@ -62,7 +62,7 @@ for (let i = 0; i < 11; i++) {
     html += `
     <div class="cloth3">
         <a id="demo1" href="./details.html">
-            <img src="resource/mi_images/sj1.webp"><br><span id="title">小米MIX3</span> <br><span id="price">￥3333.00</span>
+            <img src="resource/mi_images/phoneMix3.jfif"><br><span id="title">小米MIX3</span> <br><span id="price">￥3333.00</span>
         </a>
     </div>`
 }

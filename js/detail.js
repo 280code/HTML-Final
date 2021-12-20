@@ -32,7 +32,7 @@ function addInCart() {
             name: "店铺：苹果电脑官方旗舰店",
             commoditys: [{
                 title: "【24期免息】Apple/苹果 MacBook Pro 16英寸 M1 Pro / Pro Max 芯片手提办公专设计用官方网笔记本电脑2021",
-                price: 20699.00,
+                price: 20199.00,
                 src: "resource/computer/macbook.jpg"
             }]
         }
@@ -43,8 +43,8 @@ function addInCart() {
             name: "店铺：小米手机官方旗舰店",
             commoditys: [{
                 title: "当天发(送碎屏保+24期免息)Xiaomi小米 MIX 3 手机官方旗舰店5G全网通直降3系列官网11红米新款ultra正品pro",
-                price: 1884.99,
-                src: "resource/mi_images/sj1.webp"
+                price: 3333.00,
+                src: "resource/mi_images/phoneMix3.jfif"
             }]
         }
 
@@ -53,6 +53,7 @@ function addInCart() {
     let cart = getCart();
     cart.stores.push(store);
     setCart(cart);
+    alert("添加成功！");
 }
 
 //获取购物车内的店铺信息
